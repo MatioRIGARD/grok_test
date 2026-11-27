@@ -1,0 +1,358 @@
+{
+  "produit": "Sphère Ø70 mm",
+  "version": "wave1b-cad-v1",
+  "proprietaire": "@cad",
+  "unites": "mètres (glTF 2.0 standard, 1 unité = 1 m)",
+  "repere_gltf": "Y-up glTF : g = (−x_CAO, z_CAO, y_CAO) × 0,001 → +Y glTF = haut, +Z glTF = avant (écran), +X glTF = droite vue de face",
+  "repere_CAO": "mm, centre sphère (0,0,0), +Z haut, +Y avant, -Y arrière (niche), +X droite vue de dos",
+  "origine": "centre de la sphère Ø70 (le sol est à y_glTF = -0,029 m)",
+  "fichier_glb": "sphere-70mm-exploded.glb",
+  "fichier_step": "sphere-70mm-assembly.step",
+  "noeuds": [
+    {
+      "node": "upper_shell",
+      "label_fr": "Coque supérieure PA12 RF-transparente",
+      "children": [
+        "upper_shell__coque_superieure_PA12"
+      ],
+      "bbox_min_m": [
+        -0.03499,
+        -0.01675,
+        -0.03495
+      ],
+      "bbox_max_m": [
+        0.03495,
+        0.035,
+        0.03419
+      ],
+      "mass_g": 26.89,
+      "explode_vector_m": [
+        -0.0,
+        0.046,
+        0.0
+      ],
+      "explode_vector_cad_mm": [
+        0,
+        0,
+        46
+      ]
+    },
+    {
+      "node": "power_button",
+      "label_fr": "Bouton Ø6 (IO-08)",
+      "children": [
+        "power_button__bouton_alu_anodise",
+        "power_button__switch_TS-1187A",
+        "power_button__pcb_bouton"
+      ],
+      "bbox_min_m": [
+        -0.005,
+        0.0213,
+        -0.02246
+      ],
+      "bbox_max_m": [
+        0.005,
+        0.03029,
+        -0.01282
+      ],
+      "mass_g": 0.46,
+      "explode_vector_m": [
+        -0.0,
+        0.0566,
+        -0.0075
+      ],
+      "explode_vector_cad_mm": [
+        0.0,
+        -7.46,
+        56.65
+      ]
+    },
+    {
+      "node": "cover_glass_amoled",
+      "label_fr": "Verre Ø42 + AMOLED 1,39\" (DISP-01)",
+      "children": [
+        "cover_glass_amoled__verre_facade_D42",
+        "cover_glass_amoled__oca",
+        "cover_glass_amoled__dalle_AMOLED_BO139A454SPI"
+      ],
+      "bbox_min_m": [
+        -0.021,
+        -0.0077,
+        0.01517
+      ],
+      "bbox_max_m": [
+        0.021,
+        0.03079,
+        0.03408
+      ],
+      "mass_g": 5.84,
+      "explode_vector_m": [
+        -0.0,
+        0.0294,
+        0.0544
+      ],
+      "explode_vector_cad_mm": [
+        0.0,
+        54.38,
+        29.36
+      ]
+    },
+    {
+      "node": "pcb_facade",
+      "label_fr": "PCB façade 2C (FAB-02) + FFC",
+      "children": [
+        "pcb_facade__b2b_BM28_DISP-02",
+        "pcb_facade__pcb_facade_FR4",
+        "pcb_facade__connecteur_FFC_facade_FH12A",
+        "pcb_facade__nappe_FFC_IO-07"
+      ],
+      "bbox_min_m": [
+        -0.019,
+        -0.01117,
+        0.01388
+      ],
+      "bbox_max_m": [
+        0.019,
+        0.02786,
+        0.03085
+      ],
+      "mass_g": 2.71,
+      "explode_vector_m": [
+        -0.0,
+        0.0184,
+        0.0308
+      ],
+      "explode_vector_cad_mm": [
+        0.0,
+        30.81,
+        18.37
+      ]
+    },
+    {
+      "node": "lipo_battery",
+      "label_fr": "LiPo 1500 mAh (BAT-01)",
+      "children": [
+        "lipo_battery__lipo_PRT-26059"
+      ],
+      "bbox_min_m": [
+        -0.02575,
+        -0.0039,
+        -0.017
+      ],
+      "bbox_max_m": [
+        0.02575,
+        0.0039,
+        0.017
+      ],
+      "mass_g": 30.0,
+      "explode_vector_m": [
+        -0.0,
+        0.02,
+        0.0
+      ],
+      "explode_vector_cad_mm": [
+        0,
+        0,
+        20
+      ]
+    },
+    {
+      "node": "thermal_barrier_nasbis",
+      "label_fr": "NASBIS 0,52 + berceau PA12 + MECH-02",
+      "children": [
+        "thermal_barrier_nasbis__nasbis_EYG-Y0912QN4S",
+        "thermal_barrier_nasbis__berceau_PA12",
+        "thermal_barrier_nasbis__entretoise_MECH-02_1",
+        "thermal_barrier_nasbis__entretoise_MECH-02_2",
+        "thermal_barrier_nasbis__entretoise_MECH-02_3",
+        "thermal_barrier_nasbis__entretoise_MECH-02_4"
+      ],
+      "bbox_min_m": [
+        -0.02575,
+        -0.01202,
+        -0.017
+      ],
+      "bbox_max_m": [
+        0.02575,
+        -0.0039,
+        0.017
+      ],
+      "mass_g": 5.09,
+      "explode_vector_m": [
+        -0.0,
+        0.008,
+        0.0
+      ],
+      "explode_vector_cad_mm": [
+        0,
+        0,
+        8
+      ]
+    },
+    {
+      "node": "pcb_mpu_som",
+      "label_fr": "PCB MPU 4C (FAB-01) + SoM i.MX 8M Plus",
+      "children": [
+        "pcb_mpu_som__pcb_mpu_4L_FAB-01",
+        "pcb_mpu_som__som_UCM-iMX8PLUS",
+        "pcb_mpu_som__b2b_DF40C_1",
+        "pcb_mpu_som__b2b_DF40C_2",
+        "pcb_mpu_som__wifi_MAYA-W166",
+        "pcb_mpu_som__jst_BAT-02",
+        "pcb_mpu_som__connecteur_FFC_mpu_FH12A",
+        "pcb_mpu_som__usbc_IO-01",
+        "pcb_mpu_som__microhdmi_IO-02",
+        "pcb_mpu_som__entretoise_SMT_MECH-01_1",
+        "pcb_mpu_som__entretoise_SMT_MECH-01_2",
+        "pcb_mpu_som__entretoise_SMT_MECH-01_3",
+        "pcb_mpu_som__entretoise_SMT_MECH-01_4",
+        "pcb_mpu_som__vis_M2x6_MECH-03_mpu_1",
+        "pcb_mpu_som__vis_M2x6_MECH-03_mpu_2",
+        "pcb_mpu_som__vis_M2x6_MECH-03_mpu_3",
+        "pcb_mpu_som__vis_M2x6_MECH-03_mpu_4"
+      ],
+      "bbox_min_m": [
+        -0.02816,
+        -0.01962,
+        -0.02849
+      ],
+      "bbox_max_m": [
+        0.02816,
+        -0.00652,
+        0.02815
+      ],
+      "mass_g": 20.59,
+      "explode_vector_m": [
+        -0.0,
+        -0.005,
+        0.0
+      ],
+      "explode_vector_cad_mm": [
+        0,
+        0,
+        -5
+      ]
+    },
+    {
+      "node": "thermal_pad",
+      "label_fr": "Pad TG-AD66 (TIM-01)",
+      "children": [
+        "thermal_pad__pad_TIM-01_TG-AD66"
+      ],
+      "bbox_min_m": [
+        -0.015,
+        -0.02037,
+        -0.015
+      ],
+      "bbox_max_m": [
+        0.015,
+        -0.01912,
+        0.015
+      ],
+      "mass_g": 3.38,
+      "explode_vector_m": [
+        -0.0,
+        -0.017,
+        0.0
+      ],
+      "explode_vector_cad_mm": [
+        0,
+        0,
+        -17
+      ]
+    },
+    {
+      "node": "heatsink_base",
+      "label_fr": "Radiateur-lest Al 6061-T6 + laiton",
+      "children": [
+        "heatsink_base__radiateur_lest_Al6061-T6",
+        "heatsink_base__insert_lest_laiton_C36000",
+        "heatsink_base__vis_M2x6_MECH-03_base_2",
+        "heatsink_base__vis_M2x6_MECH-03_base_3",
+        "heatsink_base__vis_M2x6_MECH-03_base_4",
+        "heatsink_base__vis_M2x6_MECH-03_base_5"
+      ],
+      "bbox_min_m": [
+        -0.03045,
+        -0.027,
+        -0.03045
+      ],
+      "bbox_max_m": [
+        0.03045,
+        -0.01382,
+        0.03045
+      ],
+      "mass_g": 55.84,
+      "explode_vector_m": [
+        -0.0,
+        -0.029,
+        0.0
+      ],
+      "explode_vector_cad_mm": [
+        0,
+        0,
+        -29
+      ]
+    },
+    {
+      "node": "silicone_foot",
+      "label_fr": "Patins silicone ×4",
+      "children": [
+        "silicone_foot__patins_silicone_x4"
+      ],
+      "bbox_min_m": [
+        -0.0103,
+        -0.029,
+        -0.0205
+      ],
+      "bbox_max_m": [
+        0.0103,
+        -0.027,
+        0.0205
+      ],
+      "mass_g": 0.31,
+      "explode_vector_m": [
+        -0.0,
+        -0.04,
+        0.0
+      ],
+      "explode_vector_cad_mm": [
+        0,
+        0,
+        -40
+      ]
+    }
+  ],
+  "eclatement": {
+    "note": "position_eclatee = position_assemblee + explode_vector_m × t (t ∈ [0,1]). Ordre conseillé d’animation : upper_shell+power_button → cover_glass_amoled → pcb_facade → lipo_battery → thermal_barrier_nasbis → pcb_mpu_som → thermal_pad → heatsink_base → silicone_foot. La nappe pcb_facade__nappe_FFC_IO-07 relie les deux PCB : la masquer (visible=false) en vue éclatée.",
+    "ordre": [
+      "upper_shell",
+      "power_button",
+      "cover_glass_amoled",
+      "pcb_facade",
+      "lipo_battery",
+      "thermal_barrier_nasbis",
+      "pcb_mpu_som",
+      "thermal_pad",
+      "heatsink_base",
+      "silicone_foot"
+    ]
+  },
+  "masse_totale_g": 151.1,
+  "cg_cad_mm": [
+    0.08,
+    0.46,
+    -9.0
+  ],
+  "cg_gltf_m": [
+    -8e-05,
+    -0.009,
+    0.00046
+  ],
+  "materiaux_cmf": {
+    "coque": "#2B2D30",
+    "radiateur": "#3F4348",
+    "verre": "#08090B",
+    "patins": "#18191B"
+  }
+}

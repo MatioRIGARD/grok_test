@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="1820" viewBox="0 0 3000 1820">
+<rect width="3000" height="1820" fill="#16181C"/>
+<defs>
+<pattern id="hatch" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(45)"><rect width="10" height="10" fill="#FF4D4F" fill-opacity="0.10"/><line x1="0" y1="0" x2="0" y2="10" stroke="#FF4D4F" stroke-width="3" stroke-opacity="0.75"/></pattern>
+<marker id="dm" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#F4F5F7"/></marker>
+</defs>
+<text x="60.0" y="70.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="34" fill="#F4F5F7" text-anchor="start" font-weight="700" >Carte façade AMOLED — Ø37 mm · 2 couches FR-4 1.0 mm · inclinée 25° · échelle 30 px/mm</text>
+<text x="60.0" y="108.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="22" fill="#9AA0AA" text-anchor="start" font-weight="400" >Depuis sphere70-facade.kicad_pcb · face arrière vue de dessus par transparence · bas = côté carte MPU (nappe FFC)</text>
+<text x="770.0" y="200.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="30" fill="#F4F5F7" text-anchor="middle" font-weight="700" >Face AMOLED (F.Cu)</text>
+<circle cx="770.0" cy="880.0" r="555.0" fill="#0F3B2E" stroke="#F4F5F7" stroke-width="2.5"/>
+<circle cx="770.0" cy="880.0" r="549.0" fill="#13493A" opacity="0.55"/>
+<circle cx="770.0" cy="880.0" r="630.0" fill="none" stroke="#9AA0AA" stroke-width="2" stroke-dasharray="3 5"/>
+<circle cx="770.0" cy="880.0" r="531.2" fill="#5CE1E6" fill-opacity="0.06" stroke="#5CE1E6" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="770.0" y="472.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="24" fill="#5CE1E6" text-anchor="middle" font-weight="600" >zone active AMOLED Ø35.4 mm</text>
+<text x="770.0" y="310.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="20" fill="#9AA0AA" text-anchor="middle" font-weight="400" >module AMOLED ≤ Ø42 mm (déborde de la carte)</text>
+<rect x="668.0" y="962.5" width="204.0" height="75.0" rx="2" fill="#3A3D42" fill-opacity="0.85" stroke="#9AA0AA" stroke-width="1.2"/>
+<circle cx="770.0" cy="1345.0" r="63.0" fill="#3A3D42" stroke="#9AA0AA" stroke-width="1.2"/>
+<circle cx="367.3" cy="647.5" r="63.0" fill="#3A3D42" stroke="#9AA0AA" stroke-width="1.2"/>
+<circle cx="1172.7" cy="647.5" r="63.0" fill="#3A3D42" stroke="#9AA0AA" stroke-width="1.2"/>
+<circle cx="770.00" cy="1345.00" r="33.00" fill="#0B0C0E"/>
+<circle cx="770.00" cy="1345.00" r="33.00" fill="#16181C"/>
+<circle cx="1172.69" cy="647.50" r="33.00" fill="#0B0C0E"/>
+<circle cx="1172.69" cy="647.50" r="33.00" fill="#16181C"/>
+<rect x="709.25" y="962.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="719.75" y="962.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="730.25" y="962.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="740.75" y="962.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="751.25" y="962.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="761.75" y="962.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="772.25" y="962.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="782.75" y="962.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="793.25" y="962.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="803.75" y="962.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="814.25" y="962.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="824.75" y="962.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="709.25" y="1019.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="719.75" y="1019.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="730.25" y="1019.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="740.75" y="1019.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="751.25" y="1019.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="761.75" y="1019.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="772.25" y="1019.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="782.75" y="1019.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="793.25" y="1019.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="803.75" y="1019.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="814.25" y="1019.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="824.75" y="1019.50" width="6.00" height="18.00" rx="1" fill="#C9A227"/>
+<rect x="674.00" y="976.00" width="15.00" height="48.00" rx="1" fill="#C9A227"/>
+<rect x="851.00" y="976.00" width="15.00" height="48.00" rx="1" fill="#C9A227"/>
+<circle cx="367.31" cy="647.50" r="33.00" fill="#0B0C0E"/>
+<circle cx="367.31" cy="647.50" r="33.00" fill="#16181C"/>
+<line x1="801.50" y1="1108.00" x2="801.50" y2="1096.00" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<line x1="801.50" y1="1096.00" x2="785.75" y2="1080.25" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<line x1="785.75" y1="1080.25" x2="785.75" y2="1028.50" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<circle cx="801.50" cy="1108.00" r="6.75" fill="#F4F5F7"/><circle cx="801.50" cy="1108.00" r="3.00" fill="#16181C"/>
+<line x1="780.50" y1="1096.00" x2="775.25" y2="1090.75" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<line x1="780.50" y1="1108.00" x2="780.50" y2="1096.00" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<line x1="775.25" y1="1090.75" x2="775.25" y2="1028.50" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<circle cx="780.50" cy="1108.00" r="6.75" fill="#F4F5F7"/><circle cx="780.50" cy="1108.00" r="3.00" fill="#16181C"/>
+<line x1="817.25" y1="1060.75" x2="817.25" y2="1028.50" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<line x1="852.50" y1="1108.00" x2="852.50" y2="1096.00" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<line x1="852.50" y1="1096.00" x2="817.25" y2="1060.75" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<circle cx="852.50" cy="1108.00" r="6.75" fill="#F4F5F7"/><circle cx="852.50" cy="1108.00" r="3.00" fill="#16181C"/>
+<line x1="831.50" y1="1108.00" x2="831.50" y2="1096.00" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<line x1="806.75" y1="1071.25" x2="806.75" y2="1028.50" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<line x1="831.50" y1="1096.00" x2="806.75" y2="1071.25" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<circle cx="831.50" cy="1108.00" r="6.75" fill="#F4F5F7"/><circle cx="831.50" cy="1108.00" r="3.00" fill="#16181C"/>
+<rect x="657.6" y="1055.0" width="224.8" height="29.0" rx="4" fill="#16181C" opacity="0.92"/><text x="663.6" y="1079.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="20" fill="#F4F5F7" text-anchor="start" font-weight="600" >J2 BM28 24p 0.35 mm</text>
+<rect x="736.0" y="1262.0" width="68.0" height="29.0" rx="4" fill="#16181C" opacity="0.92"/><text x="742.0" y="1286.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="20" fill="#F4F5F7" text-anchor="start" font-weight="600" >H1 M2</text>
+<rect x="333.3" y="564.5" width="68.0" height="29.0" rx="4" fill="#16181C" opacity="0.92"/><text x="339.3" y="588.5" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="20" fill="#F4F5F7" text-anchor="start" font-weight="600" >H2 M2</text>
+<rect x="1138.7" y="564.5" width="68.0" height="29.0" rx="4" fill="#16181C" opacity="0.92"/><text x="1144.7" y="588.5" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="20" fill="#F4F5F7" text-anchor="start" font-weight="600" >H3 M2</text>
+<text x="2230.0" y="200.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="30" fill="#F4F5F7" text-anchor="middle" font-weight="700" >Face arrière (B.Cu)</text>
+<circle cx="2230.0" cy="880.0" r="555.0" fill="#0F3B2E" stroke="#F4F5F7" stroke-width="2.5"/>
+<circle cx="2230.0" cy="880.0" r="549.0" fill="#13493A" opacity="0.55"/>
+<rect x="1930.0" y="1171.0" width="600.0" height="138.0" rx="2" fill="#3A3D42" fill-opacity="0.85" stroke="#9AA0AA" stroke-width="1.2"/>
+<rect x="2153.5" y="413.5" width="153.0" height="153.0" rx="2" fill="#3A3D42" fill-opacity="0.85" stroke="#9AA0AA" stroke-width="1.2"/>
+<rect x="2185.0" y="616.0" width="90.0" height="48.0" rx="2" fill="#3A3D42" fill-opacity="0.85" stroke="#9AA0AA" stroke-width="1.2"/>
+<rect x="2026.0" y="1078.0" width="48.0" height="24.0" rx="2" fill="#3A3D42" fill-opacity="0.85" stroke="#9AA0AA" stroke-width="1.2"/>
+<rect x="2395.0" y="1082.5" width="30.0" height="15.0" rx="2" fill="#3A3D42" fill-opacity="0.85" stroke="#9AA0AA" stroke-width="1.2"/>
+<circle cx="2230.00" cy="1345.00" r="33.00" fill="#0B0C0E"/>
+<circle cx="2230.00" cy="1345.00" r="33.00" fill="#16181C"/>
+<circle cx="2632.69" cy="647.50" r="33.00" fill="#0B0C0E"/>
+<circle cx="2632.69" cy="647.50" r="33.00" fill="#16181C"/>
+<circle cx="1827.31" cy="647.50" r="33.00" fill="#0B0C0E"/>
+<circle cx="1827.31" cy="647.50" r="33.00" fill="#16181C"/>
+<rect x="2443.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2428.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2413.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2398.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2383.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2368.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2353.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2338.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2323.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2308.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2293.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2278.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2263.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2248.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2233.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2218.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2203.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2188.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2173.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2158.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2143.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2128.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2113.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2098.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2083.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2068.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2053.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2038.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2023.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2008.00" y="1141.00" width="9.00" height="39.00" rx="1" fill="#C9A227"/>
+<rect x="2473.00" y="1234.00" width="54.00" height="66.00" rx="1" fill="#C9A227"/>
+<rect x="1933.00" y="1234.00" width="54.00" height="66.00" rx="1" fill="#C9A227"/>
+<rect x="2234.05" y="619.00" width="30.00" height="42.00" rx="1" fill="#C9A227"/>
+<rect x="2195.95" y="619.00" width="30.00" height="42.00" rx="1" fill="#C9A227"/>
+<rect x="2416.90" y="1081.75" width="15.00" height="16.50" rx="1" fill="#C9A227"/>
+<rect x="2388.10" y="1081.75" width="15.00" height="16.50" rx="1" fill="#C9A227"/>
+<rect x="2305.00" y="423.25" width="30.00" height="22.50" rx="1" fill="#C9A227"/>
+<rect x="2125.00" y="423.25" width="30.00" height="22.50" rx="1" fill="#C9A227"/>
+<rect x="2305.00" y="534.25" width="30.00" height="22.50" rx="1" fill="#C9A227"/>
+<rect x="2125.00" y="534.25" width="30.00" height="22.50" rx="1" fill="#C9A227"/>
+<rect x="2060.50" y="1076.50" width="24.00" height="27.00" rx="1" fill="#C9A227"/>
+<rect x="2015.50" y="1076.50" width="24.00" height="27.00" rx="1" fill="#C9A227"/>
+<circle cx="2261.50" cy="1108.00" r="6.75" fill="#F4F5F7"/><circle cx="2261.50" cy="1108.00" r="3.00" fill="#16181C"/>
+<line x1="2267.50" y1="1135.00" x2="2261.50" y2="1129.00" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<line x1="2267.50" y1="1160.50" x2="2267.50" y2="1135.00" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<line x1="2261.50" y1="1129.00" x2="2261.50" y2="1108.00" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<circle cx="2240.50" cy="1108.00" r="6.75" fill="#F4F5F7"/><circle cx="2240.50" cy="1108.00" r="3.00" fill="#16181C"/>
+<line x1="2252.50" y1="1141.00" x2="2240.50" y2="1129.00" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<line x1="2252.50" y1="1160.50" x2="2252.50" y2="1141.00" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<line x1="2240.50" y1="1129.00" x2="2240.50" y2="1108.00" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<circle cx="2312.50" cy="1108.00" r="6.75" fill="#F4F5F7"/><circle cx="2312.50" cy="1108.00" r="3.00" fill="#16181C"/>
+<line x1="2312.50" y1="1160.50" x2="2312.50" y2="1108.00" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<circle cx="2291.50" cy="1108.00" r="6.75" fill="#F4F5F7"/><circle cx="2291.50" cy="1108.00" r="3.00" fill="#16181C"/>
+<line x1="2297.50" y1="1160.50" x2="2297.50" y2="1135.00" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<line x1="2297.50" y1="1135.00" x2="2291.50" y2="1129.00" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<line x1="2291.50" y1="1129.00" x2="2291.50" y2="1108.00" stroke="#5CE1E6" stroke-width="4.50" stroke-linecap="round"/>
+<rect x="1973.0" y="1229.0" width="124.0" height="29.0" rx="4" fill="#16181C" opacity="0.92"/><text x="1979.0" y="1253.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="20" fill="#F4F5F7" text-anchor="start" font-weight="600" >J1 FFC 30p</text>
+<rect x="2168.0" y="368.0" width="124.0" height="29.0" rx="4" fill="#16181C" opacity="0.92"/><text x="2174.0" y="392.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="20" fill="#F4F5F7" text-anchor="start" font-weight="600" >SW1 bouton</text>
+<rect x="2168.0" y="674.0" width="124.0" height="29.0" rx="4" fill="#16181C" opacity="0.92"/><text x="2174.0" y="698.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="20" fill="#F4F5F7" text-anchor="start" font-weight="600" >J3 BTN_EXT</text>
+<rect x="2032.8" y="1118.0" width="34.4" height="29.0" rx="4" fill="#16181C" opacity="0.92"/><text x="2038.8" y="1142.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="20" fill="#F4F5F7" text-anchor="start" font-weight="600" >C1</text>
+<rect x="2392.8" y="1118.0" width="34.4" height="29.0" rx="4" fill="#16181C" opacity="0.92"/><text x="2398.8" y="1142.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="20" fill="#F4F5F7" text-anchor="start" font-weight="600" >C2</text>
+<rect x="2212.8" y="1391.0" width="34.4" height="29.0" rx="4" fill="#16181C" opacity="0.92"/><text x="2218.8" y="1415.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="20" fill="#F4F5F7" text-anchor="start" font-weight="600" >H1</text>
+<rect x="1810.1" y="564.5" width="34.4" height="29.0" rx="4" fill="#16181C" opacity="0.92"/><text x="1816.1" y="588.5" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="20" fill="#F4F5F7" text-anchor="start" font-weight="600" >H2</text>
+<rect x="2615.5" y="564.5" width="34.4" height="29.0" rx="4" fill="#16181C" opacity="0.92"/><text x="2621.5" y="588.5" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="20" fill="#F4F5F7" text-anchor="start" font-weight="600" >H3</text>
+<line x1="215.0" y1="1550.0" x2="1325.0" y2="1550.0" stroke="#F4F5F7" stroke-width="1.6" marker-start="url(#dm)" marker-end="url(#dm)"/>
+<text x="770.0" y="1540.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="24" fill="#F4F5F7" text-anchor="middle" font-weight="700" >Ø37.0 mm</text>
+<line x1="238.8" y1="1600.0" x2="1301.2" y2="1600.0" stroke="#5CE1E6" stroke-width="1.6" marker-start="url(#dm)" marker-end="url(#dm)"/>
+<text x="770.0" y="1590.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="24" fill="#5CE1E6" text-anchor="middle" font-weight="700" >zone active Ø35.4 mm</text>
+<line x1="1675.0" y1="1550.0" x2="2785.0" y2="1550.0" stroke="#F4F5F7" stroke-width="1.6" marker-start="url(#dm)" marker-end="url(#dm)"/>
+<text x="2230.0" y="1540.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="24" fill="#F4F5F7" text-anchor="middle" font-weight="700" >Ø37.0 mm</text>
+<rect x="60" y="1650" width="2880" height="120" rx="12" fill="#202226"/>
+<rect x="90" y="1674" width="44" height="12" rx="3" fill="#5CE1E6"/>
+<text x="150.0" y="1686.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="24" fill="#9AA0AA" text-anchor="start" font-weight="400" >MIPI-DSI D0 + CLK (J1 → vias → J2), 0.15 mm, &lt; 5 mm, impédance non contrôlée (2 couches 1.0 mm)</text>
+<text x="90.0" y="1726.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="22" fill="#9AA0AA" text-anchor="start" font-weight="400" >Ø37 = Ø max 38.7 mm disponible dans la cavité R32 à d = 25.48 mm du centre, moins 0.86 mm de jeu radial. Bouton : actionneur vers le bouton Ø6 haut-arrière à définir (@cad).</text>
+</svg>

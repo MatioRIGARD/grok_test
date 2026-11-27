@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sphère Ø70 mm — Présentation produit · Wave 2 / Gate 2</title>
+<style>
+@font-face{font-family:"Inter";src:url("./assets/fonts/Inter-Var.ttf") format("truetype");font-weight:100 900;font-display:block}
+@font-face{font-family:"Space Grotesk";src:url("./assets/fonts/SpaceGrotesk-Var.ttf") format("truetype");font-weight:300 700;font-display:block}
+@font-face{font-family:"JetBrains Mono";src:url("./assets/fonts/JetBrainsMono-Var.ttf") format("truetype");font-weight:100 800;font-display:block}
+:root{
+  --bg:#16181C;--p1:#1E2127;--p2:#2B2D30;--line:rgba(255,255,255,0.08);--line2:rgba(255,255,255,0.14);
+  --tx:#F2F4F7;--tx2:#9AA3B2;--cy:#5CE1E6;--am:#FF6B3D;--light:#EEF0F3;
+  --disp:"Space Grotesk","Inter",system-ui,sans-serif;--body:"Inter",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;background:#0D0E11;overflow:hidden;color:var(--tx);font-family:var(--body);-webkit-font-smoothing:antialiased}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:0 0;background:var(--bg);overflow:hidden}
+.slide{position:absolute;inset:0;padding:72px 96px 0;display:none;background:
+  radial-gradient(1200px 700px at 85% -10%,rgba(92,225,230,0.06),transparent 60%),
+  radial-gradient(900px 600px at -5% 110%,rgba(255,107,61,0.045),transparent 60%),var(--bg)}
+.slide.active{display:block}
+.bgtraces{position:absolute;inset:0;width:1920px;height:1080px;pointer-events:none;z-index:0}
+.bgtraces path{fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:0}
+.bgtraces circle{fill:var(--bg);stroke-width:2}
+.content{position:relative;z-index:1;height:100%}
+/* header */
+.eyebrow{font-family:var(--mono);font-size:19px;letter-spacing:.14em;text-transform:uppercase;color:var(--cy);display:flex;align-items:center;gap:16px}
+.eyebrow .idx{color:var(--bg);background:var(--cy);padding:3px 10px;border-radius:4px;font-weight:700;letter-spacing:.06em}
+h1,h2{font-family:var(--disp);font-weight:600;letter-spacing:-0.02em;line-height:1.04}
+h2{font-size:58px;margin-top:18px}
+h2 em{font-style:normal;color:var(--cy)}
+.lede{font-size:25px;line-height:1.45;color:var(--tx2);margin-top:16px;max-width:1500px}
+.lede b{color:var(--tx);font-weight:600}
+/* footer */
+.ft{position:absolute;left:0;right:0;bottom:30px;display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:16px;letter-spacing:.14em;color:#6B7382;text-transform:uppercase}
+.ft .brand{display:flex;align-items:center;gap:12px}
+.ft .brand i{width:10px;height:10px;border-radius:50%;background:var(--cy);box-shadow:0 0 12px var(--cy);display:inline-block}
+.ft .pg{color:var(--tx2)}
+body.interactive .ft .pg{visibility:hidden}
+/* panels */
+.panel{background:var(--p1);border:1px solid var(--line);border-radius:22px}
+.lightcard{background:var(--light);border-radius:22px;overflow:hidden;position:relative;box-shadow:0 30px 80px rgba(0,0,0,0.45),inset 0 0 0 1px rgba(255,255,255,0.4)}
+.darkcard{background:#16181C;border:1px solid var(--line2);border-radius:22px;overflow:hidden;position:relative;box-shadow:0 30px 80px rgba(0,0,0,0.4)}
+.crop{position:relative;overflow:hidden}
+.crop img{position:absolute;display:block}
+.tag{position:absolute;left:20px;top:18px;font-family:var(--mono);font-size:16px;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:6px;background:rgba(22,24,28,0.88);color:var(--cy);z-index:2}
+.num{font-family:var(--disp);font-weight:600;white-space:nowrap;letter-spacing:-0.02em}
+.mono{font-family:var(--mono)}
+.cy{color:var(--cy)}.am{color:var(--am)}.mut{color:var(--tx2)}
+code{font-family:var(--mono);font-size:.86em;color:var(--tx);background:rgba(92,225,230,0.10);border:1px solid rgba(92,225,230,0.22);padding:1px 8px;border-radius:6px;white-space:nowrap}
+.spec{display:flex;flex-direction:column;gap:0}
+.spec .row{display:grid;grid-template-columns:170px 1fr;gap:20px;padding:15px 0;border-top:1px solid var(--line);align-items:baseline}
+.spec .row:last-child{border-bottom:1px solid var(--line)}
+.spec .k{font-family:var(--mono);font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:var(--tx2)}
+.spec .v{font-size:23px;line-height:1.38;color:var(--tx)}
+.spec .v small{display:block;font-size:19px;color:var(--tx2);margin-top:3px}
+.chips{display:flex;flex-wrap:wrap;gap:14px}
+.chip{background:var(--p1);border:1px solid var(--line2);border-radius:14px;padding:14px 20px;display:flex;flex-direction:column;gap:4px}
+.chip .cv{font-family:var(--disp);font-weight:600;font-size:30px;white-space:nowrap}
+.chip .cl{font-size:17px;color:var(--tx2);font-family:var(--mono);letter-spacing:.02em}
+.kpi{padding:26px 28px;border-radius:20px;background:linear-gradient(180deg,#2B2D30,#1E2127);border:1px solid var(--line2);position:relative;overflow:hidden}
+.kpi::before{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:linear-gradient(90deg,var(--cy),transparent)}
+.kpi.am::before{background:linear-gradient(90deg,var(--am),transparent)}
+.kpi .kv{font-family:var(--disp);font-weight:600;font-size:52px;letter-spacing:-0.03em;white-space:nowrap;color:var(--tx)}
+.kpi .kv small{font-size:26px;color:var(--tx2);margin-left:6px;font-weight:500}
+.kpi .kl{font-family:var(--mono);font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:var(--tx2);margin-top:8px}
+.kpi .kd{font-size:19px;color:var(--tx2);margin-top:10px;line-height:1.4}
+/* nav chrome */
+#progress{position:fixed;left:0;top:0;height:4px;background:var(--cy);box-shadow:0 0 14px rgba(92,225,230,0.7);z-index:50;transition:width .35s ease;width:0}
+#counter{position:fixed;right:22px;bottom:16px;z-index:50;font-family:var(--mono);font-size:15px;letter-spacing:.12em;color:var(--tx);background:rgba(30,33,39,0.85);border:1px solid var(--line2);border-radius:8px;padding:7px 12px;display:flex;gap:10px;align-items:center}
+#counter button{background:none;border:0;color:var(--cy);font:inherit;cursor:pointer;padding:0 4px}
+body.export #progress,body.export #counter{display:none}
+
+/* ---------- slide 1 ---------- */
+.s1 .heroimg{position:absolute;right:0;top:0;width:1010px;height:1080px;z-index:0}
+.s1 .heroimg img{width:100%;height:100%;object-fit:cover;object-position:52% 50%;display:block;filter:saturate(.9) contrast(1.04)}
+.s1 .heroimg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(22,24,28,0.78) 14%,rgba(22,24,28,0) 42%),linear-gradient(0deg,rgba(22,24,28,0.75) 0%,rgba(22,24,28,0) 26%)}
+.s1 .left{position:relative;z-index:2;width:1000px;padding-top:70px}
+.s1 h1{font-size:150px;margin-top:36px;letter-spacing:-0.045em}
+.s1 h1 span{color:var(--cy)}
+.s1 .promise{font-size:31px;line-height:1.42;color:var(--tx);margin-top:30px;max-width:900px;font-weight:400}
+.s1 .promise b{color:var(--cy);font-weight:600}
+.s1 .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:64px;width:1180px}
+.s1 .kpi .kv{font-size:46px}
+.s1 .stamp{position:absolute;right:56px;top:56px;z-index:3;font-family:var(--mono);font-size:16px;letter-spacing:.12em;color:var(--tx);background:rgba(22,24,28,0.82);border:1px solid var(--line2);padding:10px 16px;border-radius:8px;text-transform:uppercase}
+.s1 .stamp b{color:var(--cy)}
+/* ---------- slide 2 ---------- */
+.s2 .grid{display:grid;grid-template-columns:960px 1fr;gap:64px;margin-top:44px}
+.s2 .ui{border-radius:24px;overflow:hidden;border:1px solid var(--line2);background:#121212;height:720px;position:relative}
+.s2 .ui img{width:100%;height:100%;object-fit:cover;display:block}
+.s2 .blocks{display:flex;flex-direction:column;justify-content:space-between;gap:22px;height:720px}
+.s2 .blk{padding:30px 34px}
+.s2 .blk h3{font-family:var(--disp);font-size:30px;font-weight:600;display:flex;align-items:center;gap:14px}
+.s2 .blk h3 .n{font-family:var(--mono);font-size:16px;color:var(--cy);border:1px solid rgba(92,225,230,0.4);border-radius:6px;padding:3px 8px}
+.s2 .blk p{font-size:21px;line-height:1.45;color:var(--tx2);margin-top:10px}
+.s2 .blk p b{color:var(--tx);font-weight:600}
+.swatches{display:flex;gap:14px;margin-top:16px}
+.sw{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:15px;color:var(--tx2)}
+.sw i{width:30px;height:30px;border-radius:50%;display:inline-block;border:1px solid rgba(255,255,255,0.22)}
+/* ---------- slide 3 ---------- */
+.s3 .grid{display:grid;grid-template-columns:1140px 1fr;gap:48px;margin-top:36px}
+.legend{display:flex;flex-direction:column}
+.legend .li{display:grid;grid-template-columns:48px 1fr auto;gap:16px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}
+.legend .li:last-child{border-bottom:1px solid var(--line)}
+.legend .ix{font-family:var(--mono);font-size:17px;color:var(--cy);width:40px;height:40px;border-radius:50%;border:1px solid rgba(92,225,230,0.45);display:flex;align-items:center;justify-content:center}
+.legend .nm{font-size:21px;line-height:1.25}
+.legend .nm small{display:block;font-family:var(--mono);font-size:14px;color:#7D8696;letter-spacing:.04em;margin-top:2px}
+.legend .ms{font-family:var(--disp);font-size:23px;font-weight:600;white-space:nowrap}
+.legend .ms span{font-size:16px;color:var(--tx2);margin-left:3px;font-weight:500}
+.legend .total{display:flex;justify-content:space-between;align-items:baseline;padding-top:16px;font-family:var(--mono);font-size:17px;letter-spacing:.1em;text-transform:uppercase;color:var(--tx2)}
+.legend .total b{font-family:var(--disp);font-size:34px;color:var(--cy);letter-spacing:-0.02em}
+/* ---------- slide 4 ---------- */
+.s4 .imgs{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:40px}
+.s4 .chips{margin-top:30px}
+.s4 .chip{flex:1}.s4 .chip .cl,.s6 .chip .cl{white-space:nowrap;font-size:15px}
+/* ---------- slide 5/7/9 split ---------- */
+.split{display:grid;grid-template-columns:1100px 1fr;gap:56px;margin-top:40px}
+.split .side{display:flex;flex-direction:column;gap:22px}
+/* ---------- slide 6 ---------- */
+.s6 .chips{margin-top:26px}
+.s6 .chip{flex:1;padding:14px 18px}
+.s6 .chip .cv{font-size:27px}
+/* ---------- slide 8 ---------- */
+.s8 .grid{display:grid;grid-template-columns:1150px 1fr;gap:56px;margin-top:30px}
+.s8 svg text{font-family:var(--body)}
+.s8 .side{display:flex;flex-direction:column;gap:20px}
+/* ---------- slide 9 ---------- */
+.bus{display:flex;flex-direction:column}
+.bus .b{display:grid;grid-template-columns:14px 1fr;gap:18px;padding:14px 0;border-top:1px solid var(--line)}
+.bus .b:last-child{border-bottom:1px solid var(--line)}
+.bus .b i{width:14px;height:14px;border-radius:3px;margin-top:8px}
+.bus .b .t{font-size:22px;font-weight:600}
+.bus .b .d{font-size:19px;color:var(--tx2);margin-top:4px;line-height:1.4}
+/* ---------- slide 10 ---------- */
+.s10 .grid{display:grid;grid-template-columns:900px 1fr;gap:48px;margin-top:40px}
+.s10 .panel{padding:38px 44px;height:770px}
+.s10 h3{font-family:var(--disp);font-size:28px;font-weight:600;display:flex;justify-content:space-between;align-items:baseline}
+.s10 h3 b{font-size:40px;color:var(--cy)}
+.bars{margin-top:34px;display:flex;flex-direction:column;gap:20px}
+.bar{display:grid;grid-template-columns:300px 1fr 112px;gap:16px;align-items:center}
+.bar .bl{font-size:21px;color:var(--tx)}
+.bar .bt{height:32px;background:rgba(255,255,255,0.04);border-radius:6px;overflow:hidden}
+.bar .bf{height:100%;border-radius:6px;background:linear-gradient(90deg,#2E8F94,var(--cy));transform-origin:0 50%}
+.bar.am .bf{background:linear-gradient(90deg,#B04A2A,var(--am))}
+.bar .bv{font-family:var(--disp);font-size:23px;font-weight:600;text-align:right;white-space:nowrap}
+.donutwrap{display:grid;grid-template-columns:380px 1fr;gap:44px;align-items:center;margin-top:44px}
+.dl{display:flex;flex-direction:column;gap:28px}
+.dl .it{display:grid;grid-template-columns:18px 1fr;gap:16px}
+.dl .it i{width:18px;height:18px;border-radius:4px;margin-top:6px}
+.dl .it .v{font-family:var(--disp);font-size:34px;font-weight:600;white-space:nowrap}
+.dl .it .v span{font-size:19px;color:var(--tx2);font-weight:500;margin-left:8px}
+.dl .it .l{font-size:19px;color:var(--tx2);line-height:1.35;margin-top:2px}
+.stack{display:flex;height:26px;border-radius:6px;overflow:hidden;margin-top:56px}
+.stack div{height:100%}
+/* ---------- slide 11 ---------- */
+.s11 .pass{display:inline-flex;align-items:center;gap:14px;margin-top:22px;font-family:var(--mono);font-size:19px;letter-spacing:.12em;text-transform:uppercase;color:var(--bg);background:var(--cy);padding:9px 18px;border-radius:8px;font-weight:700}
+.s11 .locked{display:flex;gap:16px;margin-top:40px}.s11 .locked .chip{flex:1}.s11 .axes{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:36px}
+.s11 .ax{padding:36px 34px 38px;position:relative}
+.s11 .ax .an{font-family:var(--mono);font-size:56px;font-weight:700;color:rgba(92,225,230,0.22);position:absolute;right:26px;top:16px}
+.s11 .ax .own{font-family:var(--mono);font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:var(--am)}
+.s11 .ax h3{font-family:var(--disp);font-size:31px;font-weight:600;margin-top:10px}
+.s11 .ax ul{list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:12px}
+.s11 .ax li{font-size:21px;line-height:1.4;color:var(--tx2);padding-left:22px;position:relative}
+.s11 .ax li::before{content:"";position:absolute;left:0;top:11px;width:8px;height:8px;border-radius:2px;background:var(--cy)}
+.s11 .ax li b{color:var(--tx);font-weight:600}
+.s11 .concl{margin-top:44px;display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;padding:30px 40px;border-radius:22px;background:linear-gradient(90deg,rgba(92,225,230,0.12),rgba(92,225,230,0.02));border:1px solid rgba(92,225,230,0.35)}
+.s11 .concl .big{font-family:var(--disp);font-size:40px;font-weight:600;white-space:nowrap}
+.s11 .concl p{font-size:23px;line-height:1.45;color:var(--tx)}
+.s11 .concl p span{color:var(--tx2)}
+</style>
+</head>
+<body class="interactive">
+<div id="progress"></div>
+<div id="counter"><button id="prevBtn" aria-label="Précédente">←</button><span id="ctext">01 / 11</span><button id="nextBtn" aria-label="Suivante">→</button></div>
+<div id="stage">
+
+<!-- ============ 01 HERO ============ -->
+<section class="slide s1" data-traces="hero">
+  <div class="heroimg"><img src="./assets/sphere-70mm-concept-3quarter.jpg" alt="Sphère Ø70 mm — concept 3/4"></div>
+  <div class="stamp"><b>●</b> Gate 1 · PASS — chiffres verrouillés</div>
+  <div class="content">
+    <div class="left">
+      <div class="eyebrow" data-anim><span class="idx">01</span> Présentation produit · Wave 2 — Gate 2</div>
+      <h1 data-anim>Sphère<br><span>Ø70</span> mm</h1>
+      <p class="promise" data-anim>Un ordinateur Linux complet tenant dans la paume : <b>écran AMOLED circulaire incliné à 25°</b>, cœur <b>i.MX 8M Plus avec NPU</b>, batterie embarquée et sortie <b>Micro-HDMI 1080p60</b> — dans une sphère <b>Basalt &amp; Gunmetal</b>.</p>
+      <div class="kpis">
+        <div class="kpi" data-anim><div class="kv">Ø70,0<small>mm</small></div><div class="kl">Enveloppe sphère</div></div>
+        <div class="kpi" data-anim><div class="kv">151,1<small>g</small></div><div class="kl">Masse totale</div></div>
+        <div class="kpi am" data-anim><div class="kv">−9,00<small>mm</small></div><div class="kl">Centre de gravité z</div></div>
+        <div class="kpi" data-anim><div class="kv">~783<small>$</small></div><div class="kl">BOM proto v1</div></div>
+      </div>
+    </div>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">01 / 11</span></footer>
+  </div>
+</section>
+
+<!-- ============ 02 DESIGN ============ -->
+<section class="slide s2" data-traces="tr">
+  <div class="content">
+    <div class="eyebrow" data-anim><span class="idx">02</span> Design industriel</div>
+    <h2 data-anim>Basalt &amp; Gunmetal, <em>posture 25°</em></h2>
+    <div class="grid">
+      <div class="ui" data-anim><img src="./assets/sphere-70mm-ui-states.jpg" alt="États UI de l'écran circulaire"></div>
+      <div class="blocks">
+        <div class="blk panel" data-anim>
+          <h3><span class="n">CMF</span>Basalt &amp; Gunmetal</h3>
+          <p>Calotte <b>PA12 gris anthracite mat</b>, œil en verre noir affleurant, base <b>Alu anodisé gunmetal</b> à gorges radiales.</p>
+          <div class="swatches">
+            <span class="sw"><i style="background:#2B2D30"></i>#2B2D30</span>
+            <span class="sw"><i style="background:#3F4348"></i>#3F4348</span>
+            <span class="sw"><i style="background:#08090B"></i>#08090B</span>
+            <span class="sw"><i style="background:#18191B"></i>#18191B</span>
+          </div>
+        </div>
+        <div class="blk panel" data-anim>
+          <h3><span class="n">UI</span>Interface circulaire</h3>
+          <p>AMOLED <b>454×454 px</b>, Ø35,41 mm actif : états <b>Idle, Wi-Fi, HDMI 1080p60, Grok Bot</b> lisibles d'un coup d'œil.</p>
+        </div>
+        <div class="blk panel" data-anim>
+          <h3><span class="n">25°</span>Ergonomie de bureau</h3>
+          <p>Écran <b>incliné à 25°</b> vers le regard d'un utilisateur assis à 45–60 cm. Hauteur posée <b>64,0 mm</b>, bouton <b>Ø6</b> à 35° derrière le zénith.</p>
+        </div>
+      </div>
+    </div>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">02 / 11</span></footer>
+  </div>
+</section>
+
+<!-- ============ 03 ECLATEE ============ -->
+<section class="slide s3" data-traces="br">
+  <div class="content">
+    <div class="eyebrow" data-anim><span class="idx">03</span> Architecture mécanique</div>
+    <h2 data-anim>Vue éclatée — <em>10 sous-ensembles</em></h2>
+    <div class="grid">
+      <div class="lightcard" data-anim style="height:666px;align-self:center">
+        <div class="crop" data-src="./assets/render-exploded.png" data-w="1800" data-h="1200" data-crop="0 0.085 0 0.04" style="width:100%;height:100%"></div>
+      </div>
+      <div class="legend" data-anim>
+        <div class="li"><span class="ix">01</span><div class="nm">Coque PA12 RF-transparente<small>upper_shell</small></div><div class="ms">26,89<span>g</span></div></div>
+        <div class="li"><span class="ix">02</span><div class="nm">Bouton Ø6 (IO-08)<small>power_button</small></div><div class="ms">0,46<span>g</span></div></div>
+        <div class="li"><span class="ix">03</span><div class="nm">Verre Ø42 + AMOLED 1,39"<small>cover_glass_amoled</small></div><div class="ms">5,84<span>g</span></div></div>
+        <div class="li"><span class="ix">04</span><div class="nm">PCB façade 2C + nappe FFC<small>pcb_facade</small></div><div class="ms">2,71<span>g</span></div></div>
+        <div class="li"><span class="ix">05</span><div class="nm">LiPo 1500 mAh<small>lipo_battery</small></div><div class="ms">30,00<span>g</span></div></div>
+        <div class="li"><span class="ix">06</span><div class="nm">NASBIS 0,52 + berceau PA12<small>thermal_barrier_nasbis</small></div><div class="ms">5,09<span>g</span></div></div>
+        <div class="li"><span class="ix">07</span><div class="nm">PCB MPU 4C + SoM i.MX 8M Plus<small>pcb_mpu_som</small></div><div class="ms">20,59<span>g</span></div></div>
+        <div class="li"><span class="ix">08</span><div class="nm">Pad thermique TG-AD66<small>thermal_pad</small></div><div class="ms">3,38<span>g</span></div></div>
+        <div class="li"><span class="ix">09</span><div class="nm">Radiateur-lest Alu 6061-T6 + laiton<small>heatsink_base</small></div><div class="ms">55,84<span>g</span></div></div>
+        <div class="li"><span class="ix">10</span><div class="nm">Patins silicone ×4<small>silicone_foot</small></div><div class="ms">0,31<span>g</span></div></div>
+        <div class="total">Masse totale assemblée <b>151,1 g</b></div>
+      </div>
+    </div>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">03 / 11</span></footer>
+  </div>
+</section>
+
+<!-- ============ 04 COQUE ============ -->
+<section class="slide s4" data-traces="tr">
+  <div class="content">
+    <div class="eyebrow" data-anim><span class="idx">04</span> Couche 1 · Enveloppe</div>
+    <h2 data-anim>Coque PA12 RF-transparente &amp; <em>connectique arrière</em></h2>
+    <div class="imgs">
+      <div class="lightcard" data-anim style="height:610px"><span class="tag">Vue 3/4 avant</span>
+        <div class="crop" data-src="./assets/render-assembled.png" data-w="1800" data-h="1200" data-crop="0.16 0.09 0.16 0.05" style="width:100%;height:100%"></div></div>
+      <div class="lightcard" data-anim style="height:610px"><span class="tag">Vue arrière · niche ports</span>
+        <div class="crop" data-src="./assets/render-assembled-rear.png" data-w="1800" data-h="1200" data-crop="0.16 0.09 0.16 0.05" style="width:100%;height:100%"></div></div>
+    </div>
+    <div class="chips">
+      <div class="chip" data-anim><span class="cv">3,0 mm</span><span class="cl">Paroi · cavité Ø64,0</span></div>
+      <div class="chip" data-anim><span class="cv">26,89 g</span><span class="cl">Coque monobloc PA12</span></div>
+      <div class="chip" data-anim><span class="cv">MJF / SLA</span><span class="cl">Anthracite #2B2D30</span></div>
+      <div class="chip" data-anim><span class="cv">Bouton Ø6</span><span class="cl">Haut arrière · 35°</span></div>
+      <div class="chip" data-anim><span class="cv">USB-C + µHDMI</span><span class="cl">Charge 5 V · 1080p60</span></div>
+      <div class="chip" data-anim style="border-color:rgba(92,225,230,0.45)"><span class="cv cy">15,0 mm</span><span class="cl">Entraxe des ports</span></div>
+    </div>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">04 / 11</span></footer>
+  </div>
+</section>
+
+<!-- ============ 05 ECRAN ============ -->
+<section class="slide s5" data-traces="bl">
+  <div class="content">
+    <div class="eyebrow" data-anim><span class="idx">05</span> Couche 2 · Façade</div>
+    <h2 data-anim>Écran AMOLED 1,39" à 25° &amp; <em>PCB façade</em></h2>
+    <div class="split">
+      <div class="darkcard" data-anim style="height:720px;display:flex;align-items:center;justify-content:center;padding:14px">
+        <img src="./assets/pcb-facade-layout.png" alt="Layout PCB façade" style="width:100%;height:100%;object-fit:contain;display:block">
+      </div>
+      <div class="side">
+        <div class="spec" data-anim>
+          <div class="row"><span class="k">Dalle</span><span class="v">Panox / BOE <code>BO139A454SPI</code><small>AMOLED circulaire 1,39" · 5,84 g</small></span></div>
+          <div class="row"><span class="k">Résolution</span><span class="v">454×454 px<small>Ø35,41 mm actif</small></span></div>
+          <div class="row"><span class="k">Verre</span><span class="v">Ø42 mm affleurant<small>incliné à 25°</small></span></div>
+          <div class="row"><span class="k">Liaison</span><span class="v">MIPI-DSI 1 voie · 45 Hz<small>synchronisation TE</small></span></div>
+          <div class="row"><span class="k">PCB façade</span><span class="v">Ø37–38 × 1,0 mm · 2 couches FR-4<small>2,71 g · nappe FFC 30 voies vers MPU</small></span></div>
+        </div>
+      </div>
+    </div>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">05 / 11</span></footer>
+  </div>
+</section>
+
+<!-- ============ 06 BATTERIE ============ -->
+<section class="slide s6" data-traces="tr">
+  <div class="content">
+    <div class="eyebrow" data-anim><span class="idx">06</span> Couche 3 · Énergie</div>
+    <h2 data-anim>Batterie LiPo 1500 mAh &amp; <em>isolation NASBIS</em></h2>
+    <div class="lightcard" data-anim style="margin-top:30px;height:640px;background:#FFFFFF">
+      <div class="crop" data-src="./assets/render-section-annotated.png" data-w="3192" data-h="1436" data-crop="0 0.05 0 0.035" style="width:100%;height:100%"></div>
+    </div>
+    <div class="chips">
+      <div class="chip" data-anim><span class="cv">5,55 Wh</span><span class="cl">PRT-26059 · 3,7 V</span></div>
+      <div class="chip" data-anim><span class="cv">z = 0</span><span class="cl">Centrée · 30,0 g</span></div>
+      <div class="chip" data-anim><span class="cv">0,52 mm</span><span class="cl">NASBIS + berceau</span></div>
+      <div class="chip" data-anim><span class="cv">750 mA</span><span class="cl">BQ25895 · NVDC</span></div>
+      <div class="chip" data-anim style="border-color:rgba(92,225,230,0.45)"><span class="cv cy">~3,1 h</span><span class="cl">Assistant OLED</span></div>
+      <div class="chip" data-anim style="border-color:rgba(255,107,61,0.45)"><span class="cv am">~2,2 h</span><span class="cl">Lecture vidéo</span></div>
+    </div>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">06 / 11</span></footer>
+  </div>
+</section>
+
+<!-- ============ 07 MPU ============ -->
+<section class="slide s7" data-traces="br">
+  <div class="content">
+    <div class="eyebrow" data-anim><span class="idx">07</span> Couche 4 · Calcul</div>
+    <h2 data-anim>Cœur de calcul : <em>PCB MPU 4 couches &amp; i.MX 8M Plus</em></h2>
+    <div class="split">
+      <div class="darkcard" data-anim style="height:720px;display:flex;align-items:center;justify-content:center;padding:14px">
+        <img src="./assets/pcb-mpu-layout.png" alt="Layout PCB MPU" style="width:100%;height:100%;object-fit:contain;display:block">
+      </div>
+      <div class="side">
+        <div class="spec" data-anim>
+          <div class="row"><span class="k">SoM</span><span class="v">CompuLab <code>UCM-iMX8M-Plus</code><small>38×28×4 mm · face vers le radiateur</small></span></div>
+          <div class="row"><span class="k">Processeur</span><span class="v">Quad Cortex-A53 1,8 GHz<small>+ Cortex-M7 temps réel + NPU</small></span></div>
+          <div class="row"><span class="k">Mémoire</span><span class="v">4 Go RAM · 32 Go eMMC</span></div>
+          <div class="row"><span class="k">Radio</span><span class="v">u-blox <code>MAYA-W166-00B</code><small>Wi-Fi 4 2,4/5 GHz · BT/BLE 5.2 · antenne PCB</small></span></div>
+          <div class="row"><span class="k">Carte porteuse</span><span class="v">Ø56,0 × 1,6 mm · 4 couches FR-4<small>impédance contrôlée · z = −12,02 / −13,62 mm · 20,59 g</small></span></div>
+        </div>
+      </div>
+    </div>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">07 / 11</span></footer>
+  </div>
+</section>
+
+<!-- ============ 08 RADIATEUR ============ -->
+<section class="slide s8" data-traces="tr">
+  <div class="content">
+    <div class="eyebrow" data-anim><span class="idx">08</span> Couche 5 · Thermique &amp; stabilité</div>
+    <h2 data-anim>Radiateur-lest Alu 6061-T6 &amp; <em>insert laiton</em></h2>
+    <div class="grid">
+      <div class="panel" data-anim style="height:780px;position:relative;overflow:hidden">
+        <svg id="s8svg" viewBox="0 0 1150 780" width="1150" height="780"></svg>
+      </div>
+      <div class="side">
+        <div class="kpi am" data-anim><div class="kv">−9,00<small>mm</small></div><div class="kl">Centre de gravité · objectif &lt; −8,0</div><div class="kd">Sans laiton : z<sub>CG</sub> = −7,89 mm, hors exigence. L'insert C36000 de <b style="color:var(--tx)">13,8 g</b> fait passer le centre de gravité sous la cible.</div></div>
+        <div class="kpi" data-anim><div class="kv">55,84<small>g</small></div><div class="kl">Base radiateur-lest</div><div class="kd">Alu 6061-T6 CNC anodisé gunmetal, <b style="color:var(--tx)">36 gorges radiales</b>, gorge d'ombre 0,5 mm à z = −17,0 mm.</div></div>
+        <div class="kpi" data-anim><div class="kv">SoM → Alu</div><div class="kl">Chemin thermique direct</div><div class="kd">Heat-spreader du SoM → pad <b style="color:var(--tx)">TG-AD66</b> (3,38 g) → radiateur. 4 patins silicone : lame d'air 2,0 mm.</div></div>
+      </div>
+    </div>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">08 / 11</span></footer>
+  </div>
+</section>
+
+<!-- ============ 09 ELEC ============ -->
+<section class="slide s9" data-traces="bl">
+  <div class="content">
+    <div class="eyebrow" data-anim><span class="idx">09</span> Électronique</div>
+    <h2 data-anim>Architecture électrique &amp; <em>budget d'énergie</em></h2>
+    <div class="split">
+      <div class="darkcard" data-anim style="height:740px;display:flex;align-items:center;justify-content:center;padding:14px">
+        <img src="./assets/block-diagram.png" alt="Schéma bloc électrique" style="width:100%;height:100%;object-fit:contain;display:block">
+      </div>
+      <div class="side">
+        <div class="bus" data-anim>
+          <div class="b"><i style="background:var(--am)"></i><div><div class="t">USB-C → BQ25895 (NVDC)</div><div class="d">Charge 5 V + USB 2.0, courant de charge bridé à 750 mA</div></div></div>
+          <div class="b"><i style="background:var(--cy)"></i><div><div class="t">MIPI-DSI 1 voie · 45 Hz</div><div class="d">SoM → AMOLED via nappe FFC 30 voies, sync TE</div></div></div>
+          <div class="b"><i style="background:#8B9BFF"></i><div><div class="t">SDIO 4 bits + UART HCI</div><div class="d">Wi-Fi 4 bi-bande et BT/BLE 5.2 (MAYA-W166)</div></div></div>
+          <div class="b"><i style="background:#C9D1DC"></i><div><div class="t">Micro-HDMI · 1080p60</div><div class="d">Sortie vidéo native du i.MX 8M Plus</div></div></div>
+        </div>
+        <div class="kpi am" data-anim><div class="kv">≤ 3,0<small>W</small></div><div class="kl">Plafond DVFS SoM sur batterie</div><div class="kd">Respecte la limite de décharge LiPo de 1,5 A.</div></div>
+      </div>
+    </div>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">09 / 11</span></footer>
+  </div>
+</section>
+
+<!-- ============ 10 BILAN ============ -->
+<section class="slide s10" data-traces="tr">
+  <div class="content">
+    <div class="eyebrow" data-anim><span class="idx">10</span> Bilan chiffré</div>
+    <h2 data-anim>Masses &amp; <em>BOM prototype v1</em></h2>
+    <div class="grid">
+      <div class="panel" data-anim>
+        <h3>Répartition des masses <b>151,1 g</b></h3>
+        <div class="bars" id="massBars"></div>
+      </div>
+      <div class="panel" data-anim>
+        <h3>Coût BOM proto v1 <b>~783 $</b></h3>
+        <div class="donutwrap">
+          <svg id="donut" viewBox="0 0 360 360" width="380" height="380"></svg>
+          <div class="dl">
+            <div class="it"><i style="background:var(--cy)"></i><div><div class="v">465 $<span>59 %</span></div><div class="l">Kit d'évaluation CompuLab (SoM inclus)</div></div></div>
+            <div class="it"><i style="background:var(--am)"></i><div><div class="v">208,33 $<span>27 %</span></div><div class="l">CNC / SLA / PCB / PCBA (estimations)</div></div></div>
+            <div class="it"><i style="background:#8B95A5"></i><div><div class="v">109,71 $<span>14 %</span></div><div class="l">Composants électroniques &amp; mécaniques</div></div></div>
+          </div>
+        </div>
+        <div class="stack"><div style="width:59.38%;background:var(--cy)"></div><div style="width:26.61%;background:var(--am)"></div><div style="width:14.01%;background:#8B95A5"></div></div>
+      </div>
+    </div>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">10 / 11</span></footer>
+  </div>
+</section>
+
+<!-- ============ 11 ROADMAP ============ -->
+<section class="slide s11" data-traces="tr">
+  <div class="content">
+    <div class="eyebrow" data-anim><span class="idx">11</span> Gouvernance &amp; suite</div>
+    <h2 data-anim>Gate 1 verrouillé, <em>cap sur la v1.1</em></h2>
+    <div class="pass" data-anim>● Gate 1 · PASS — Wave 1 → Wave 2 autorisée</div>
+    <div class="locked">
+      <div class="chip" data-anim><span class="cv">Ø70,0 mm</span><span class="cl">Enveloppe</span></div>
+      <div class="chip" data-anim><span class="cv">64,0 mm</span><span class="cl">Hauteur posée</span></div>
+      <div class="chip" data-anim><span class="cv">151,1 g</span><span class="cl">Masse totale</span></div>
+      <div class="chip" data-anim><span class="cv am">−9,00 mm</span><span class="cl">z<sub>CG</sub></span></div>
+      <div class="chip" data-anim><span class="cv cy">~783 $</span><span class="cl">BOM proto v1</span></div>
+    </div>
+    <div class="axes">
+      <div class="ax panel" data-anim><span class="an">01</span><div class="own">@parts</div><h3>BOM v1.1</h3>
+        <ul><li>Activer <b>TUSB320</b> (PWR-04) et ajouter une <b>NTC 10 kΩ</b> LiPo</li><li>Ajouter insert laiton, 4× vis M2×3, PSA/OCA, mini-PCB bouton</li><li>MECH-06 : <b>1 coque supérieure</b> PA12/SLA</li></ul></div>
+      <div class="ax panel" data-anim><span class="an">02</span><div class="own">@spark + @cad</div><h3>Sync méca / KiCad</h3>
+        <ul><li>Confirmer le dégagement sous SoM (DF40C 1,5 mm, option DF40HC 3,0 mm)</li><li>PCB MPU à <b>z = −12,02 / −13,62</b> et encoche ports dans KiCad v1.1</li><li>Lever la contradiction <b>DDC 1,8 V / 3,3 V</b></li></ul></div>
+      <div class="ax panel" data-anim><span class="an">03</span><div class="own">Mathieu</div><h3>Validation thermique</h3>
+        <ul><li>Politique de suspension de charge en vidéo soutenue (<b>&gt; 2 W → LiPo ~47 °C</b>)</li><li>Température de contact de la base Alu : <b>~55 °C</b> en vidéo continue</li></ul></div>
+    </div>
+    <div class="concl" data-anim>
+      <div class="big">Prochaine étape <span class="cy">→ prototype physique</span></div>
+      <p>Enveloppe, masse, centre de gravité et coût sont figés. <span>Ces trois révisions v1.1 bouclées, la Sphère Ø70 mm passe du jumeau numérique au premier prototype.</span></p>
+    </div>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">11 / 11</span></footer>
+  </div>
+</section>
+
+</div>
+<script src="./assets/anime.min.js"></script>
+<script>
+(function(){
+const params=new URLSearchParams(location.search);
+const EXPORT=params.has('export');
+if(EXPORT){document.body.classList.add('export');document.body.classList.remove('interactive');}
+const stage=document.getElementById('stage');
+const slides=[...document.querySelectorAll('.slide')];
+const N=slides.length;
+const NS='http://www.w3.org/2000/svg';
+const el=(t,a)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);return e;};
+
+/* --- fit 16:9 stage --- */
+function fit(){const s=Math.min(innerWidth/1920,innerHeight/1080);stage.style.transform=`scale(${s}) translate(-50%,-50%)`;stage.style.transformOrigin='0 0';stage.style.left='50%';stage.style.top='50%';
+  stage.style.transform=`translate(-50%,-50%) scale(${s})`;stage.style.transformOrigin='50% 50%';}
+addEventListener('resize',fit);fit();
+
+/* --- crops (light renders: remove baked titles / footers) --- */
+function applyCrops(root){root.querySelectorAll('.crop').forEach(c=>{
+  const [l,t,r,b]=c.dataset.crop.split(' ').map(Number);const W=+c.dataset.w,H=+c.dataset.h;
+  let img=c.querySelector('img');if(!img){img=new Image();img.src=c.dataset.src;img.alt='';c.appendChild(img);}
+  const cw=c.clientWidth, ch=c.clientHeight; if(!cw||!ch) return;
+  const vw=W*(1-l-r), vh=H*(1-t-b);
+  const s=Math.min(cw/vw, ch/vh);
+  const ox=(cw-vw*s)/2 - l*W*s, oy=(ch-vh*s)/2 - t*H*s;
+  Object.assign(img.style,{width:W*s+'px',height:H*s+'px',left:ox+'px',top:oy+'px',clipPath:`inset(${t*100}% ${r*100}% ${b*100}% ${l*100}%)`});
+});}
+/* --- deterministic PCB traces --- */
+function rng(seed){return()=>{seed=(seed*16807)%2147483647;return(seed-1)/2147483646;};}
+function traces(svg,kind,seed){
+  const R=rng(seed);const g=el('g',{});svg.appendChild(g);
+  const add=(d,x,y,col,op)=>{g.appendChild(el('path',{d,stroke:col,'stroke-opacity':op,pathLength:1,class:'trace'}));
+    g.appendChild(el('circle',{cx:x,cy:y,r:5.5,stroke:col,'stroke-opacity':Math.min(1,op*2),class:'via'}));};
+  const colOf=(i,n)=>i===1?['#5CE1E6',0.45]:(i===n-2?['#FF6B3D',0.42]:['#9AA3B2',0.16]);
+  if(kind==='hero'){ // top-left band, above the eyebrow (y<125)
+    const n=5;for(let i=0;i<n;i++){const y=48+i*16, L=180+R()*200+i*30, d2=Math.min(y-14,40+R()*30);
+      const x1=L, x2=x1+d2, y2=y-d2, x3=x2+80+R()*160;const [c,o]=colOf(i,n);
+      add(`M0,${y} L${x1},${y} L${x2},${y2} L${x3},${y2}`,x3,y2,c,o);}
+    return;}
+  // top-right band (x>1420, y<150) + right edge strip (x>1846)
+  const n=6;for(let i=0;i<n;i++){const y=34+i*17, L=120+R()*160+i*22, d2=Math.min(y-12,30+R()*30);
+    const x1=1920-L, x2=x1-d2, y2=y-d2, x3=Math.max(1440,x2-60-R()*160);const [c,o]=colOf(i,n);
+    add(`M1920,${y} L${x1},${y} L${x2},${y2} L${x3},${y2}`,x3,y2,c,o);}
+  const m=4;for(let i=0;i<m;i++){const x=1856+i*16, L=220+R()*260+i*40;const [c,o]=colOf(i,m);
+    add(`M${x},150 L${x},${150+L}`,x,150+L,c,o);}
+}
+slides.forEach((s,i)=>{const svg=el('svg',{class:'bgtraces',viewBox:'0 0 1920 1080'});s.insertBefore(svg,s.firstChild);traces(svg,s.dataset.traces||'tr',1234+i*97);});
+
+/* --- slide 8: technical section of the base (CAD mm, 10 px / mm) --- */
+(function(){
+  const svg=document.getElementById('s8svg');const S=10,cx=380,cy=368;
+  const X=x=>cx+x*S, Y=z=>cy-z*S;
+  const defs=el('defs',{});defs.innerHTML=`
+   <linearGradient id="gm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5A6068"/><stop offset="1" stop-color="#2F3338"/></linearGradient>
+   <linearGradient id="br" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8C6A35"/><stop offset=".5" stop-color="#D9B26A"/><stop offset="1" stop-color="#8C6A35"/></linearGradient>
+   <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="rgba(255,255,255,0.10)" stroke-width="2"/></pattern>
+   <marker id="ah" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5CE1E6"/></marker>`;
+  svg.appendChild(defs);
+  const g=el('g',{});svg.appendChild(g);
+  const add=(t,a)=>{const e=el(t,a);g.appendChild(e);return e;};
+  // ground
+  add('line',{x1:X(-34),y1:Y(-29),x2:X(34),y2:Y(-29),stroke:'#9AA3B2','stroke-width':2});
+  add('rect',{x:X(-34),y:Y(-29),width:68*S,height:22,fill:'url(#hatch)'});
+  // shell ring above z=-17
+  const zo=-17, xo=Math.sqrt(35*35-zo*zo), xi=Math.sqrt(32*32-zo*zo);
+  add('path',{d:`M${X(-xo)},${Y(zo)} A${35*S},${35*S} 0 1 1 ${X(xo)},${Y(zo)} L${X(xi)},${Y(zo)} A${32*S},${32*S} 0 1 0 ${X(-xi)},${Y(zo)} Z`,fill:'#2B2D30',stroke:'rgba(255,255,255,0.22)','stroke-width':1.5});
+  // front glass at 25° (front = right)
+  const a1=(25+36.87)*Math.PI/180,a2=(25-36.87)*Math.PI/180;
+  add('path',{d:`M${X(35*Math.cos(a1))},${Y(35*Math.sin(a1))} A${35*S},${35*S} 0 0 1 ${X(35*Math.cos(a2))},${Y(35*Math.sin(a2))} Z`,fill:'#1E2127',stroke:'#1E2127','stroke-width':6});
+  add('line',{x1:X(35*Math.cos(a1)),y1:Y(35*Math.sin(a1)),x2:X(35*Math.cos(a2)),y2:Y(35*Math.sin(a2)),stroke:'#0A0B0D','stroke-width':9,'stroke-linecap':'round'});
+  add('line',{x1:X(35*Math.cos(a1)),y1:Y(35*Math.sin(a1)),x2:X(35*Math.cos(a2)),y2:Y(35*Math.sin(a2)),stroke:'#5CE1E6','stroke-opacity':.55,'stroke-width':2});
+  // battery + NASBIS
+  add('rect',{x:X(-25.75),y:Y(3.9),width:51.5*S,height:7.8*S,rx:4,fill:'#4A515C',stroke:'rgba(255,255,255,0.18)'});
+  add('rect',{x:X(-25.75),y:Y(-3.9),width:51.5*S,height:5.2,fill:'#E9EDF2','fill-opacity':.85});
+  // PCB MPU
+  add('rect',{x:X(-28),y:Y(-12.02),width:56*S,height:1.6*S,fill:'#1F7A52',stroke:'#2FA26E'});
+  // SoM
+  add('rect',{x:X(-19),y:Y(-15.12),width:38*S,height:4*S,fill:'#1A1C20',stroke:'rgba(255,255,255,0.25)'});
+  // pad
+  add('rect',{x:X(-15),y:Y(-19.12),width:30*S,height:1.25*S,fill:'#8FC3E0','fill-opacity':.9});
+  // heatsink
+  const zt=-17.25,xt=Math.sqrt(35*35-zt*zt),zb=-27,xb=Math.sqrt(35*35-zb*zb);
+  add('path',{d:`M${X(-xt)},${Y(zt)} L${X(xt)},${Y(zt)} A${35*S},${35*S} 0 0 1 ${X(xb)},${Y(zb)} L${X(-xb)},${Y(zb)} A${35*S},${35*S} 0 0 1 ${X(-xt)},${Y(zt)} Z`,fill:'url(#gm)',stroke:'rgba(255,255,255,0.25)'});
+  for(let k=-5;k<=5;k++){add('line',{x1:X(k*4.2),y1:Y(-18.4),x2:X(k*4.2*0.9),y2:Y(-26.2),stroke:'rgba(0,0,0,0.35)','stroke-width':3});}
+  // brass insert
+  add('rect',{x:X(-15),y:Y(-24.7),width:30*S,height:2.3*S,fill:'url(#br)'});
+  // feet
+  [[-10.3,-3.7],[3.7,10.3]].forEach(([a,b])=>add('rect',{x:X(a),y:Y(-27),width:(b-a)*S,height:2*S,rx:3,fill:'#0E0F11',stroke:'rgba(255,255,255,0.3)'}));
+  // thermal arrows
+  [-8,0,8].forEach(x=>add('line',{x1:X(x),y1:Y(-15.6),x2:X(x),y2:Y(-22.6),stroke:'#5CE1E6','stroke-width':3,'marker-end':'url(#ah)'}));
+  // CG
+  const cgx=X(0.08),cgy=Y(-9);
+  add('circle',{cx:cgx,cy:cgy,r:15,fill:'#16181C',stroke:'#FF6B3D','stroke-width':3});
+  add('path',{d:`M${cgx},${cgy} L${cgx+15},${cgy} A15,15 0 0 1 ${cgx},${cgy+15} Z M${cgx},${cgy} L${cgx-15},${cgy} A15,15 0 0 1 ${cgx},${cgy-15} Z`,fill:'#FF6B3D'});
+  add('line',{x1:X(-36),y1:cgy,x2:cgx-18,y2:cgy,stroke:'#FF6B3D','stroke-width':1.5,'stroke-dasharray':'6 6'});
+  // air gap dimension (left)
+  const dx=X(-31);
+  add('line',{x1:dx,y1:Y(-27),x2:dx,y2:Y(-29),stroke:'#5CE1E6','stroke-width':2});
+  add('line',{x1:X(-xb)-6,y1:Y(-27),x2:dx-14,y2:Y(-27),stroke:'#5CE1E6','stroke-width':1.5,'stroke-dasharray':'4 4'});
+  // labels
+  const LX=800;
+  const lab=(zz,xa,ly,txt,sub,col)=>{
+    const y=Y(zz);
+    add('path',{d:`M${X(xa)},${y} L${LX-60},${y} L${LX-36},${ly} L${LX-14},${ly}`,stroke:col||'rgba(255,255,255,0.38)','stroke-width':1.5,fill:'none'});
+    add('circle',{cx:X(xa),cy:y,r:4.5,fill:col||'#F2F4F7'});
+    const t=add('text',{x:LX,y:ly+6,fill:'#F2F4F7','font-size':22,'font-weight':600});t.textContent=txt;
+    if(sub){const s=add('text',{x:LX,y:ly+31,fill:'#9AA3B2','font-size':18});s.textContent=sub;}
+  };
+  lab(1.5,20,258,'LiPo 1500 mAh','centrée à z = 0');
+  lab(-12.8,26,372,'PCB MPU 4C','z = −12,02 / −13,62 mm');
+  lab(-17.1,31.3,462,'Gorge d\u2019ombre 0,5 mm','z = −17,0 mm','#FF6B3D');
+  lab(-21,27,552,'Alu 6061-T6 · 36 gorges','pad TG-AD66 au contact du SoM');
+  lab(-25.85,13,642,'Insert laiton C36000','Ø30 × 2,3 mm · 13,8 g','#D9B26A');
+  lab(-28,8.5,728,'4 patins silicone 2,0 mm','lame d\u2019air 2,0 mm');
+  const cgt=add('text',{x:X(-34),y:cgy-16,fill:'#FF6B3D','font-size':21,'font-weight':700});cgt.textContent='CG  z = −9,00 mm';
+  const tt=add('text',{x:1120,y:44,'text-anchor':'end',fill:'#9AA3B2','font-size':16,'font-family':'JetBrains Mono','letter-spacing':'2'});tt.textContent='COUPE YZ SCHÉMATIQUE · ARRIÈRE ← → AVANT';
+  const at=add('text',{x:30,y:752,fill:'#5CE1E6','font-size':18,'font-family':'JetBrains Mono'});at.textContent='▼ flux thermique SoM → pad → radiateur';
+})();
+
+/* --- slide 10: mass bars + donut --- */
+(function(){
+  const parts=[["Radiateur-lest Alu + laiton",55.84,1],["LiPo 1500 mAh",30.00,0],["Coque supérieure PA12",26.89,0],["PCB MPU + SoM",20.59,0],["Verre Ø42 + AMOLED",5.84,0],["NASBIS + berceau PA12",5.09,0],["Pad TG-AD66",3.38,0],["PCB façade + FFC",2.71,0],["Bouton Ø6",0.46,0],["Patins silicone ×4",0.31,0]];
+  const box=document.getElementById('massBars');const max=55.84;
+  parts.forEach(([n,m,a])=>{const d=document.createElement('div');d.className='bar'+(a?' am':'');
+    d.innerHTML=`<span class="bl">${n}</span><span class="bt"><span class="bf" style="display:block;width:${Math.max(m/max*100,0.9)}%"></span></span><span class="bv">${m.toFixed(2).replace('.',',')} g</span>`;box.appendChild(d);});
+  const svg=document.getElementById('donut');const r=140,c=2*Math.PI*r;let acc=0;
+  svg.appendChild(el('circle',{cx:180,cy:180,r,fill:'none',stroke:'rgba(255,255,255,0.05)','stroke-width':40}));
+  [[465,'#5CE1E6'],[208.33,'#FF6B3D'],[109.71,'#8B95A5']].forEach(([v,col])=>{
+    const f=v/783.04, gap=0.006;
+    const p=el('circle',{cx:180,cy:180,r,fill:'none',stroke:col,'stroke-width':40,'stroke-dasharray':`${(f-gap)*c} ${c}`,'stroke-dashoffset':-acc*c,transform:'rotate(-90 180 180)',class:'arc'});
+    svg.appendChild(p);acc+=f;});
+  const t1=el('text',{x:180,y:182,'text-anchor':'middle',fill:'#F2F4F7','font-size':58,'font-weight':600,'font-family':'Space Grotesk'});t1.textContent='~783 $';svg.appendChild(t1);
+  const t2=el('text',{x:180,y:220,'text-anchor':'middle',fill:'#9AA3B2','font-size':17,'font-family':'JetBrains Mono','letter-spacing':'2'});t2.textContent='PROTO V1 · USD';svg.appendChild(t2);
+})();
+
+/* --- navigation --- */
+let cur=0;
+const A=window.anime;
+window.__animeVersion = A ? (A.version||'v4') : null;
+function animateSlide(s){
+  if(!A||EXPORT) return;
+  const {animate,stagger}=A;
+  animate(s.querySelectorAll('.bgtraces .trace'),{strokeDashoffset:[1,0],duration:1600,delay:stagger(70),ease:'inOutQuad'});
+  animate(s.querySelectorAll('.bgtraces .via'),{opacity:[0,1],scale:[0.2,1],duration:500,delay:stagger(70,{start:900}),ease:'outBack'});
+  animate(s.querySelectorAll('[data-anim]'),{opacity:[0,1],translateY:[26,0],duration:750,delay:stagger(70,{start:120}),ease:'outCubic'});
+  const bars=s.querySelectorAll('.bf'); if(bars.length) animate(bars,{scaleX:[0,1],duration:1000,delay:stagger(60,{start:450}),ease:'outExpo'});
+  const arcs=s.querySelectorAll('.arc'); if(arcs.length) animate(arcs,{opacity:[0,1],duration:700,delay:stagger(180,{start:500}),ease:'outQuad'});
+}
+let pulse=null;
+function startPulse(s){
+  if(!A||EXPORT) return; if(pulse) pulse.pause();
+  pulse=A.animate(s.querySelectorAll('.bgtraces .via[stroke="#5CE1E6"], .bgtraces .via[stroke="#FF6B3D"]'),{strokeOpacity:[0.8,0.25],duration:1400,alternate:true,loop:true,ease:'inOutSine',delay:stagger2()});
+}
+function stagger2(){return A.stagger(200,{start:2200});}
+function goToSlide(n){
+  n=Math.max(1,Math.min(N,n|0));cur=n-1;
+  slides.forEach((s,i)=>s.classList.toggle('active',i===cur));applyCrops(slides[cur]);
+  document.getElementById('ctext').textContent=String(n).padStart(2,'0')+' / '+String(N).padStart(2,'0');
+  document.getElementById('progress').style.width=(n/N*100)+'%';
+  if(!EXPORT){history.replaceState(null,'','?slide='+n);}
+  animateSlide(slides[cur]);startPulse(slides[cur]);
+}
+window.goToSlide=goToSlide;
+addEventListener('keydown',e=>{
+  if(['ArrowRight','PageDown',' ','Enter'].includes(e.key)){e.preventDefault();goToSlide(cur+2);}
+  else if(['ArrowLeft','PageUp','Backspace'].includes(e.key)){e.preventDefault();goToSlide(cur);}
+  else if(e.key==='Home')goToSlide(1);else if(e.key==='End')goToSlide(N);
+});
+document.getElementById('prevBtn').addEventListener('click',e=>{e.stopPropagation();goToSlide(cur);});
+document.getElementById('nextBtn').addEventListener('click',e=>{e.stopPropagation();goToSlide(cur+2);});
+stage.addEventListener('click',e=>{const r=stage.getBoundingClientRect();(e.clientX<r.left+r.width*0.25)?goToSlide(cur):goToSlide(cur+2);});
+const start=parseInt(params.get('slide')||'1',10);
+(document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(()=>{goToSlide(isNaN(start)?1:start);document.documentElement.dataset.ready='1';});
+})();
+</script>
+</body>
+</html>
