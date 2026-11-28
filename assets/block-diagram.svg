@@ -5,43 +5,45 @@
 <marker id="ar-FF6B3D" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#FF6B3D"/></marker>
 <marker id="ar-9AA0AA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9AA0AA"/></marker>
 </defs>
-<text x="40.0" y="56.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="30" fill="#F4F5F7" text-anchor="start" font-weight="700" >Sphère Ø70 mm — architecture électrique (2 PCB)</text>
+<text x="40.0" y="56.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="30" fill="#F4F5F7" text-anchor="start" font-weight="700" >Sphère Ø70 mm — architecture électrique G3 (2 PCB, routées 100 %)</text>
 <text x="40.0" y="86.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="16" fill="#9AA0AA" text-anchor="start" font-weight="400" >SoM CompuLab UCM-iMX8M-Plus · chargeur NVDC BQ25895 · LiPo 1S 1500 mAh · AMOLED 1.39" MIPI-DSI · Wi-Fi/BT MAYA-W166 · USB-C + Micro-HDMI</text>
 <rect x="30" y="110" width="1370" height="830" rx="16" fill="none" stroke="#9AA0AA" stroke-width="1.5" stroke-dasharray="8 6"/>
 <text x="50.0" y="136.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="15" fill="#9AA0AA" text-anchor="start" font-weight="700" >CARTE PORTEUSE MPU — Ø56 mm · 4 couches FR-4 1.6 mm · z = −11.0 / −12.6 mm</text>
 <rect x="1440" y="110" width="450" height="830" rx="16" fill="none" stroke="#9AA0AA" stroke-width="1.5" stroke-dasharray="8 6"/>
 <text x="1460.0" y="136.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="15" fill="#9AA0AA" text-anchor="start" font-weight="700" >CARTE FAÇADE — Ø37 mm · 2 couches 1.0 mm · 25°</text>
-<rect x="60" y="200" width="230" height="100" rx="10" fill="#2B2D30" stroke="#FF6B3D" stroke-width="2"/>
-<rect x="60" y="200" width="6" height="100" rx="3" fill="#FF6B3D"/>
-<text x="78.0" y="230.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="19" fill="#F4F5F7" text-anchor="start" font-weight="700" >USB-C (J4)</text>
-<text x="78.0" y="256.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >5 V sink · Rd 5.1 kΩ ×2</text>
-<text x="78.0" y="278.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >ESD USBLC6-2SC6</text>
-<rect x="60" y="350" width="230" height="170" rx="10" fill="#2B2D30" stroke="#FF6B3D" stroke-width="2"/>
+<rect x="60" y="190" width="262" height="125" rx="10" fill="#2B2D30" stroke="#FF6B3D" stroke-width="2"/>
+<rect x="60" y="190" width="6" height="125" rx="3" fill="#FF6B3D"/>
+<text x="78.0" y="220.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="19" fill="#F4F5F7" text-anchor="start" font-weight="700" >USB-C J4 + TUSB320 U12</text>
+<text x="78.0" y="246.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >CC I2C 0x47 · R1/R2 DNP</text>
+<text x="78.0" y="268.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >TVS VBUS SMF5.0A (D3)</text>
+<text x="78.0" y="290.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >ESD H5VL10B · USBLC6-2</text>
+<rect x="60" y="350" width="262" height="170" rx="10" fill="#2B2D30" stroke="#FF6B3D" stroke-width="2"/>
 <rect x="60" y="350" width="6" height="170" rx="3" fill="#FF6B3D"/>
 <text x="78.0" y="380.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="19" fill="#F4F5F7" text-anchor="start" font-weight="700" >BQ25895 (U3)</text>
 <text x="78.0" y="406.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >NVDC power-path</text>
-<text x="78.0" y="428.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >ICHG = 750 mA</text>
+<text x="78.0" y="428.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >ICHG = 750 mA · ILIM 680 Ω</text>
 <text x="78.0" y="450.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >SYS_MIN = 3.5 V</text>
-<text x="78.0" y="472.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >IINLIM ← USB-C</text>
+<text x="78.0" y="472.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >IINLIM ← TUSB320 (FW)</text>
 <text x="78.0" y="494.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >I2C 0x6A · /QON</text>
-<rect x="60" y="580" width="230" height="100" rx="10" fill="#2B2D30" stroke="#FF6B3D" stroke-width="2"/>
-<rect x="60" y="580" width="6" height="100" rx="3" fill="#FF6B3D"/>
-<text x="78.0" y="610.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="19" fill="#F4F5F7" text-anchor="start" font-weight="700" >JST-PH (J6) + TS</text>
-<text x="78.0" y="636.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >VBAT · TS diviseur fixe</text>
-<text x="78.0" y="658.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >option NTC 10 kΩ (J7)</text>
+<rect x="60" y="570" width="262" height="125" rx="10" fill="#2B2D30" stroke="#FF6B3D" stroke-width="2"/>
+<rect x="60" y="570" width="6" height="125" rx="3" fill="#FF6B3D"/>
+<text x="78.0" y="600.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="19" fill="#F4F5F7" text-anchor="start" font-weight="700" >JST-PH (J6) + TS JEITA</text>
+<text x="78.0" y="626.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >NTC 103JT-025 (J7, offboard)</text>
+<text x="78.0" y="648.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >R3 5.1 k / R4 27 k</text>
+<text x="78.0" y="670.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >fenêtre charge 0 – 45 °C</text>
 <rect x="60" y="990" width="300" height="120" rx="10" fill="#2B2D30" stroke="#FF6B3D" stroke-width="2"/>
 <rect x="60" y="990" width="6" height="120" rx="3" fill="#FF6B3D"/>
 <text x="78.0" y="1020.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="19" fill="#F4F5F7" text-anchor="start" font-weight="700" >LiPo PRT-26059</text>
 <text x="78.0" y="1046.0" font-family="'JetBrains Mono', 'DejaVu Sans Mono', monospace" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >1S 3.7 V · 1500 mAh · 5.55 Wh</text>
 <text x="78.0" y="1068.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >décharge max 1.5 A</text>
-<text x="78.0" y="1090.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >charge max 750 mA · pas de NTC</text>
+<text x="78.0" y="1090.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >charge max 750 mA · NTC BAT-03</text>
 <rect x="334" y="210" width="12" height="690" rx="6" fill="#FF6B3D"/>
 <rect x="300.0" y="908.5" width="133.0" height="22.5" rx="4" fill="#16181C" opacity="0.92"/><text x="306.0" y="926.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13.5" fill="#FF6B3D" text-anchor="start" font-weight="600" >VSYS 3.5 – 4.4 V</text>
 <rect x="390" y="175" width="250" height="95" rx="10" fill="#2B2D30" stroke="#FF6B3D" stroke-width="2"/>
 <rect x="390" y="175" width="6" height="95" rx="3" fill="#FF6B3D"/>
 <text x="408.0" y="205.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="17" fill="#F4F5F7" text-anchor="start" font-weight="700" >TPS61023 (U4)</text>
-<text x="408.0" y="231.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >boost 5 V · HDMI 55 mA</text>
-<text x="408.0" y="253.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >→ PTC + Schottky → J5</text>
+<text x="408.0" y="231.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >boost 5.04 V · HDMI 55 mA</text>
+<text x="408.0" y="253.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >→ PTC 1.1 A + 1N5819WS → J5</text>
 <rect x="390" y="300" width="250" height="95" rx="10" fill="#2B2D30" stroke="#FF6B3D" stroke-width="2"/>
 <rect x="390" y="300" width="6" height="95" rx="3" fill="#FF6B3D"/>
 <text x="408.0" y="330.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="17" fill="#F4F5F7" text-anchor="start" font-weight="700" >TLV62569 (U5)</text>
@@ -54,9 +56,9 @@
 <text x="408.0" y="503.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >→ VDDIO AMOLED, VIO SDIO</text>
 <rect x="390" y="610" width="250" height="150" rx="10" fill="#2B2D30" stroke="#5CE1E6" stroke-width="2"/>
 <rect x="390" y="610" width="6" height="150" rx="3" fill="#5CE1E6"/>
-<text x="408.0" y="640.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="17" fill="#F4F5F7" text-anchor="start" font-weight="700" >MAYA-W166 (U2)</text>
+<text x="408.0" y="640.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="17" fill="#F4F5F7" text-anchor="start" font-weight="700" >MAYA-W166 (U2) LGA-86</text>
 <text x="408.0" y="666.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >Wi-Fi 4 2.4/5 GHz · BT/BLE 5.2</text>
-<text x="408.0" y="688.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >VCC 3V3 · VIO 1V8</text>
+<text x="408.0" y="688.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >VCC 3V3 · VIO_SD 1V8</text>
 <text x="408.0" y="710.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >SDIO 4 bits + UART ← SoM</text>
 <text x="408.0" y="732.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >antenne PCB + keepout</text>
 <rect x="700" y="230" width="330" height="400" rx="10" fill="#2B2D30" stroke="#5CE1E6" stroke-width="2"/>
@@ -124,8 +126,8 @@
 <rect x="1470" y="770" width="390" height="95" rx="10" fill="#2B2D30" stroke="#9AA0AA" stroke-width="2"/>
 <rect x="1470" y="770" width="6" height="95" rx="3" fill="#9AA0AA"/>
 <text x="1488.0" y="800.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="17" fill="#F4F5F7" text-anchor="start" font-weight="700" >SW1 bouton utilisateur</text>
-<text x="1488.0" y="826.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >BTN_USER → SoM GPIO</text>
-<text x="1488.0" y="848.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >+ diode → /QON (réveil)</text>
+<text x="1488.0" y="826.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >BTN_USER → PWRBTN SoM + /QON</text>
+<text x="1488.0" y="848.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="14.5" fill="#9AA0AA" text-anchor="start" font-weight="400" >ESD H5VL10B (D1)</text>
 <path d="M 175.0 300.0 L 175.0 350.0" fill="none" stroke="#FF6B3D" stroke-width="3" stroke-linejoin="round" marker-end="url(#ar-FF6B3D)"/>
 <rect x="185.0" y="313.5" width="72.5" height="22.5" rx="4" fill="#16181C" opacity="0.92"/><text x="191.0" y="331.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13.5" fill="#FF6B3D" text-anchor="start" font-weight="600" >VBUS 5 V</text>
 <path d="M 175.0 580.0 L 175.0 520.0" fill="none" stroke="#FF6B3D" stroke-width="3" stroke-linejoin="round" marker-end="url(#ar-FF6B3D)"/>
@@ -142,7 +144,7 @@
 <path d="M 346.0 885.0 L 680.0 885.0 L 680.0 925.0 L 1235.0 925.0 L 1235.0 700.0" fill="none" stroke="#FF6B3D" stroke-width="3" stroke-linejoin="round" marker-end="url(#ar-FF6B3D)"/>
 <rect x="1050.0" y="901.5" width="95.2" height="22.5" rx="4" fill="#16181C" opacity="0.92"/><text x="1056.0" y="919.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13.5" fill="#FF6B3D" text-anchor="start" font-weight="600" >VBAT AMOLED</text>
 <path d="M 175.0 200.0 L 175.0 160.0 L 865.0 160.0 L 865.0 230.0" fill="none" stroke="#5CE1E6" stroke-width="3" stroke-linejoin="round" marker-end="url(#ar-5CE1E6)"/>
-<rect x="470.0" y="149.5" width="276.6" height="22.5" rx="4" fill="#16181C" opacity="0.92"/><text x="476.0" y="167.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13.5" fill="#5CE1E6" text-anchor="start" font-weight="600" >USB 2.0 D± · 90 Ω (+ BC1.2 BQ25895)</text>
+<rect x="470.0" y="149.5" width="382.4" height="22.5" rx="4" fill="#16181C" opacity="0.92"/><text x="476.0" y="167.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="13.5" fill="#5CE1E6" text-anchor="start" font-weight="600" >USB 2.0 D± · 90 Ω (USBLC6) · BQ D± non connectées</text>
 <path d="M 334.0 285.0 L 270.0 285.0 L 270.0 350.0" fill="none" stroke="#9AA0AA" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 4" marker-end="url(#ar-9AA0AA)"/>
 <path d="M 700.0 285.0 L 346.0 285.0" fill="none" stroke="#9AA0AA" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 4"/>
 <rect x="543.5" y="276.5" width="33.0" height="21.5" rx="4" fill="#16181C" opacity="0.92"/><text x="549.5" y="293.0" font-family="Inter, 'DejaVu Sans', sans-serif" font-size="12.5" fill="#9AA0AA" text-anchor="start" font-weight="600" >I2C</text>

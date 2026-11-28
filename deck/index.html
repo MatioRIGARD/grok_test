@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sphère Ø70 mm — Présentation produit · Wave 2 / Gate 2</title>
+<title>Sphère Ø70 mm — Présentation · Gate G3 (routé, non commandé, non testé)</title>
 <style>
 @font-face{font-family:"Inter";src:url("./assets/fonts/Inter-Var.ttf") format("truetype");font-weight:100 900;font-display:block}
 @font-face{font-family:"Space Grotesk";src:url("./assets/fonts/SpaceGrotesk-Var.ttf") format("truetype");font-weight:300 700;font-display:block}
@@ -76,12 +76,12 @@ body.export #progress,body.export #counter{display:none}
 .s1 .heroimg{position:absolute;right:0;top:0;width:1010px;height:1080px;z-index:0}
 .s1 .heroimg img{width:100%;height:100%;object-fit:cover;object-position:52% 50%;display:block;filter:saturate(.9) contrast(1.04)}
 .s1 .heroimg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,rgba(22,24,28,0.78) 14%,rgba(22,24,28,0) 42%),linear-gradient(0deg,rgba(22,24,28,0.75) 0%,rgba(22,24,28,0) 26%)}
-.s1 .left{position:relative;z-index:2;width:1000px;padding-top:70px}
-.s1 h1{font-size:150px;margin-top:36px;letter-spacing:-0.045em}
+.s1 .left{position:relative;z-index:2;width:1000px;padding-top:36px}
+.s1 h1{font-size:132px;margin-top:22px;letter-spacing:-0.045em}
 .s1 h1 span{color:var(--cy)}
-.s1 .promise{font-size:31px;line-height:1.42;color:var(--tx);margin-top:30px;max-width:900px;font-weight:400}
+.s1 .promise{font-size:30px;line-height:1.4;color:var(--tx);margin-top:22px;max-width:900px;font-weight:400}
 .s1 .promise b{color:var(--cy);font-weight:600}
-.s1 .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:64px;width:1180px}
+.s1 .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px;width:1180px}
 .s1 .kpi .kv{font-size:46px}
 .s1 .stamp{position:absolute;right:56px;top:56px;z-index:3;font-family:var(--mono);font-size:16px;letter-spacing:.12em;color:var(--tx);background:rgba(22,24,28,0.82);border:1px solid var(--line2);padding:10px 16px;border-radius:8px;text-transform:uppercase}
 .s1 .stamp b{color:var(--cy)}
@@ -168,6 +168,24 @@ body.export #progress,body.export #counter{display:none}
 .s11 .concl .big{font-family:var(--disp);font-size:40px;font-weight:600;white-space:nowrap}
 .s11 .concl p{font-size:23px;line-height:1.45;color:var(--tx)}
 .s11 .concl p span{color:var(--tx2)}
+
+/* --- Gate G3 : maturité honnête --- */
+.matnote{border:1px solid rgba(255,107,61,0.5);background:rgba(255,107,61,0.08);border-radius:14px;padding:16px 22px;font-size:19px;line-height:1.4;color:var(--tx)}
+.matnote b{color:var(--am);font-weight:600}
+.matnote .h{font-family:var(--mono);font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--am);display:block;margin-bottom:6px}
+.pair{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:100%;gap:14px;width:100%;height:570px}
+.pair figure{position:relative;margin:0;background:#16181C;border-radius:14px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.pair figure img{width:100%;height:calc(100% - 46px);margin-top:46px;object-fit:contain;display:block}
+.pair figcaption{position:absolute;left:12px;top:12px;font-family:var(--mono);font-size:14px;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:6px;background:rgba(22,24,28,0.9);color:var(--cy)}
+.pair figcaption.w{color:var(--am)}
+.s5 .spec .row,.s7 .spec .row{padding:11px 0;grid-template-columns:150px 1fr;gap:16px}
+.s5 .spec .v,.s7 .spec .v{font-size:21px;line-height:1.33}
+.s5 .spec .v small,.s7 .spec .v small{font-size:17px}
+.s1 .matnote{margin-top:24px;width:1100px;font-size:20px}
+.s9 .bus .b{padding:9px 0}.s9 .bus .b .t{font-size:20px}.s9 .bus .b .d{font-size:17px;margin-top:2px}
+.s9 .matnote{font-size:17px;padding:12px 18px}
+.s10 .note10{font-size:19px;color:var(--tx2);margin-top:22px;line-height:1.4}.s10 .note10 b{color:var(--tx)}
+.s11 .pass.warn{background:var(--am);color:#16181C}
 </style>
 </head>
 <body class="interactive">
@@ -179,20 +197,21 @@ body.export #progress,body.export #counter{display:none}
 <!-- ============ 01 HERO ============ -->
 <section class="slide s1" data-traces="hero">
   <div class="heroimg"><img src="./assets/sphere-70mm-studio-hero.jpg" alt="Sphère Ø70 mm — rendu studio du modèle CAO"></div>
-  <div class="stamp"><b>●</b> Gate 1 · PASS — chiffres verrouillés</div>
+  <div class="stamp"><b>●</b> Gate 1 PASS · Gate G3 : routé, <span style="color:var(--am)">non commandé, non testé</span></div>
   <div class="content">
     <div class="left">
-      <div class="eyebrow" data-anim><span class="idx">01</span> Présentation produit · Wave 2 — Gate 2</div>
+      <div class="eyebrow" data-anim><span class="idx">01</span> Dossier de conception · Gate G3</div>
       <h1 data-anim>Sphère<br><span>Ø70</span> mm</h1>
-      <p class="promise" data-anim>Un ordinateur Linux complet tenant dans la paume : <b>écran AMOLED circulaire incliné à 25°</b>, cœur <b>i.MX 8M Plus avec NPU</b>, batterie embarquée et sortie <b>Micro-HDMI 1080p60</b> — dans une sphère <b>Basalt &amp; Gunmetal</b>.</p>
+      <p class="promise" data-anim>Conception d’un ordinateur Linux compact tenant dans la paume : <b>écran AMOLED circulaire incliné à 25°</b>, cœur <b>i.MX 8M Plus avec NPU</b>, batterie embarquée et sortie <b>Micro-HDMI 1080p60</b> — dans une sphère <b>Basalt &amp; Gunmetal</b>.</p>
       <div class="kpis">
         <div class="kpi" data-anim><div class="kv">Ø70,0<small>mm</small></div><div class="kl">Enveloppe sphère</div></div>
         <div class="kpi" data-anim><div class="kv">151,1<small>g</small></div><div class="kl">Masse totale</div></div>
         <div class="kpi am" data-anim><div class="kv">−9,00<small>mm</small></div><div class="kl">Centre de gravité z</div></div>
-        <div class="kpi" data-anim><div class="kv">~783<small>$</small></div><div class="kl">BOM proto v1</div></div>
+        <div class="kpi" data-anim><div class="kv">807,37<small>$</small></div><div class="kl">BOM G3 · 67 lignes</div></div>
       </div>
+      <div class="matnote" data-anim><span class="h">Maturité réelle · Gate G3</span>Cartes <b>routées</b> (0 connexion non routée, 0 erreur ERC/DRC) et fichiers de fab générés — <b>rien n’est commandé ni testé</b>. Skew HDMI CLK 3,054 mm et 1 warning sérigraphie (R3) à revoir.</div>
     </div>
-    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">01 / 11</span></footer>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Gate G3 · routé, non commandé, non testé</span><span class="pg">01 / 11</span></footer>
   </div>
 </section>
 
@@ -224,7 +243,7 @@ body.export #progress,body.export #counter{display:none}
         </div>
       </div>
     </div>
-    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">02 / 11</span></footer>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Gate G3 · routé, non commandé, non testé</span><span class="pg">02 / 11</span></footer>
   </div>
 </section>
 
@@ -251,7 +270,7 @@ body.export #progress,body.export #counter{display:none}
         <div class="total">Masse totale assemblée <b>151,1 g</b></div>
       </div>
     </div>
-    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">03 / 11</span></footer>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Gate G3 · routé, non commandé, non testé</span><span class="pg">03 / 11</span></footer>
   </div>
 </section>
 
@@ -274,7 +293,7 @@ body.export #progress,body.export #counter{display:none}
       <div class="chip" data-anim><span class="cv">USB-C + µHDMI</span><span class="cl">Charge 5 V · 1080p60</span></div>
       <div class="chip" data-anim style="border-color:rgba(92,225,230,0.45)"><span class="cv cy">15,0 mm</span><span class="cl">Entraxe des ports</span></div>
     </div>
-    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">04 / 11</span></footer>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Gate G3 · routé, non commandé, non testé</span><span class="pg">04 / 11</span></footer>
   </div>
 </section>
 
@@ -284,20 +303,21 @@ body.export #progress,body.export #counter{display:none}
     <div class="eyebrow" data-anim><span class="idx">05</span> Couche 2 · Façade</div>
     <h2 data-anim>Écran AMOLED 1,39" à 25° &amp; <em>PCB façade</em></h2>
     <div class="split">
-      <div class="darkcard" data-anim style="height:720px;display:flex;align-items:center;justify-content:center;padding:14px">
-        <img src="./assets/pcb-facade-layout.png" alt="Layout PCB façade" style="width:100%;height:100%;object-fit:contain;display:block">
+      <div class="darkcard" data-anim style="height:600px;display:flex;align-items:center;justify-content:center;padding:14px">
+        <div class="pair"><figure><figcaption>Cuivre routé · 2 couches</figcaption><img src="./assets/g3-facade-composite.png" alt="PCB façade G3, cuivre routé 2 couches"></figure><figure><figcaption class="w">3D dessus · PCB nu</figcaption><img src="./assets/g3-facade-3d-top.png" alt="Rendu 3D KiCad du PCB façade nu, sans composants"></figure></div>
       </div>
       <div class="side">
         <div class="spec" data-anim>
           <div class="row"><span class="k">Dalle</span><span class="v">Panox / BOE <code>BO139A454SPI</code><small>AMOLED circulaire 1,39" · 5,84 g</small></span></div>
-          <div class="row"><span class="k">Résolution</span><span class="v">454×454 px<small>Ø35,41 mm actif</small></span></div>
-          <div class="row"><span class="k">Verre</span><span class="v">Ø42 mm affleurant<small>incliné à 25°</small></span></div>
-          <div class="row"><span class="k">Liaison</span><span class="v">MIPI-DSI 1 voie · 45 Hz<small>synchronisation TE</small></span></div>
-          <div class="row"><span class="k">PCB façade</span><span class="v">Ø37–38 × 1,0 mm · 2 couches FR-4<small>2,71 g · nappe FFC 30 voies vers MPU</small></span></div>
+          <div class="row"><span class="k">Résolution</span><span class="v">454×454 px · Ø35,41 mm actif<small>verre Ø42 mm affleurant · incliné à 25°</small></span></div>
+          <div class="row"><span class="k">Liaison</span><span class="v">MIPI-DSI 1 voie · 45 Hz<small>synchronisation TE · nappe FFC 30 voies vers MPU</small></span></div>
+          <div class="row"><span class="k">PCB façade</span><span class="v">Ø37,0 × 1,0 mm · 2 couches FR-4<small>2,71 g · <b style="color:var(--tx)">98 pistes · 189 vias</b> · 0 non routé</small></span></div>
+          <div class="row"><span class="k">Contrôles G3</span><span class="v">0 erreur ERC · 0 erreur DRC<small>ESD <b style="color:var(--tx)">H5VL10B</b> sur SW1 (bouton)</small></span></div>
         </div>
+        <div class="matnote" data-anim><span class="h">Maturité</span>Carte <b>routée, non fabriquée</b>. Vue 3D = <b>PCB nu sans modèles de composants</b>.</div>
       </div>
     </div>
-    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">05 / 11</span></footer>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Gate G3 · routé, non commandé, non testé</span><span class="pg">05 / 11</span></footer>
   </div>
 </section>
 
@@ -314,10 +334,10 @@ body.export #progress,body.export #counter{display:none}
       <div class="chip" data-anim><span class="cv">z = 0</span><span class="cl">Centrée · 30,0 g</span></div>
       <div class="chip" data-anim><span class="cv">0,52 mm</span><span class="cl">NASBIS + berceau</span></div>
       <div class="chip" data-anim><span class="cv">750 mA</span><span class="cl">BQ25895 · NVDC</span></div>
-      <div class="chip" data-anim style="border-color:rgba(92,225,230,0.45)"><span class="cv cy">~3,1 h</span><span class="cl">Assistant OLED</span></div>
-      <div class="chip" data-anim style="border-color:rgba(255,107,61,0.45)"><span class="cv am">~2,2 h</span><span class="cl">Lecture vidéo</span></div>
+      <div class="chip" data-anim style="border-color:rgba(92,225,230,0.45)"><span class="cv cy">~3,1 h</span><span class="cl">Assistant · estimé</span></div>
+      <div class="chip" data-anim style="border-color:rgba(255,107,61,0.45)"><span class="cv am">~2,2 h</span><span class="cl">Vidéo · estimé</span></div>
     </div>
-    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">06 / 11</span></footer>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Gate G3 · routé, non commandé, non testé</span><span class="pg">06 / 11</span></footer>
   </div>
 </section>
 
@@ -327,20 +347,22 @@ body.export #progress,body.export #counter{display:none}
     <div class="eyebrow" data-anim><span class="idx">07</span> Couche 4 · Calcul</div>
     <h2 data-anim>Cœur de calcul : <em>PCB MPU 4 couches &amp; i.MX 8M Plus</em></h2>
     <div class="split">
-      <div class="darkcard" data-anim style="height:720px;display:flex;align-items:center;justify-content:center;padding:14px">
-        <img src="./assets/pcb-mpu-layout.png" alt="Layout PCB MPU" style="width:100%;height:100%;object-fit:contain;display:block">
+      <div class="darkcard" data-anim style="height:600px;display:flex;align-items:center;justify-content:center;padding:14px">
+        <div class="pair"><figure><figcaption>Cuivre routé · 4 couches</figcaption><img src="./assets/g3-mpu-composite.png" alt="PCB MPU G3, cuivre routé 4 couches"></figure><figure><figcaption class="w">3D dessus · PCB nu</figcaption><img src="./assets/g3-mpu-3d-top.png" alt="Rendu 3D KiCad du PCB MPU nu, sans composants"></figure></div>
       </div>
       <div class="side">
         <div class="spec" data-anim>
           <div class="row"><span class="k">SoM</span><span class="v">CompuLab <code>UCM-iMX8M-Plus</code><small>38×28×4 mm · face vers le radiateur</small></span></div>
-          <div class="row"><span class="k">Processeur</span><span class="v">Quad Cortex-A53 1,8 GHz<small>+ Cortex-M7 temps réel + NPU</small></span></div>
-          <div class="row"><span class="k">Mémoire</span><span class="v">4 Go RAM · 32 Go eMMC</span></div>
-          <div class="row"><span class="k">Radio</span><span class="v">u-blox <code>MAYA-W166-00B</code><small>Wi-Fi 4 2,4/5 GHz · BT/BLE 5.2 · antenne PCB</small></span></div>
-          <div class="row"><span class="k">Carte porteuse</span><span class="v">Ø56,0 × 1,6 mm · 4 couches FR-4<small>impédance contrôlée · z = −12,02 / −13,62 mm · 20,59 g</small></span></div>
+          <div class="row"><span class="k">Processeur</span><span class="v">Quad Cortex-A53 1,8 GHz + M7 + NPU<small>4 Go RAM · 32 Go eMMC</small></span></div>
+          <div class="row"><span class="k">Radio</span><span class="v">u-blox <code>MAYA-W166-00B</code><small>Wi-Fi 4 · BT/BLE 5.2 · LGA-86 · antenne PCB</small></span></div>
+          <div class="row"><span class="k">Carte porteuse</span><span class="v">Ø56,0 × 1,6 mm · 4 couches FR-4<small>20,59 g · z = −12,02 / −13,62 mm</small></span></div>
+          <div class="row"><span class="k">Routage G3</span><span class="v"><b>1101 pistes · 298 vias</b><small>0 non routé · 0 erreur ERC/DRC · 1 warning sérigraphie (R3)</small></span></div>
+          <div class="row"><span class="k">Protections</span><span class="v">TUSB320 · TVS SMF5.0A (VBUS) · ESD H5VL10B (CC1/CC2) · USBLC6 · TPD4E05U06 ×3 · PTC 1206L110 · NTC JEITA</span></div>
         </div>
+        <div class="matnote" data-anim><span class="h">Maturité</span>Routée, <b>non commandée, non testée</b>. Skew HDMI CLK <b>3,054 mm à revoir</b>. Vue 3D = PCB nu sans composants.</div>
       </div>
     </div>
-    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">07 / 11</span></footer>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Gate G3 · routé, non commandé, non testé</span><span class="pg">07 / 11</span></footer>
   </div>
 </section>
 
@@ -359,7 +381,7 @@ body.export #progress,body.export #counter{display:none}
         <div class="kpi" data-anim><div class="kv">SoM → Alu</div><div class="kl">Chemin thermique direct</div><div class="kd">Heat-spreader du SoM → pad <b style="color:var(--tx)">TG-AD66</b> (3,38 g) → radiateur. 4 patins silicone : lame d'air 2,0 mm.</div></div>
       </div>
     </div>
-    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">08 / 11</span></footer>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Gate G3 · routé, non commandé, non testé</span><span class="pg">08 / 11</span></footer>
   </div>
 </section>
 
@@ -367,7 +389,7 @@ body.export #progress,body.export #counter{display:none}
 <section class="slide s9" data-traces="bl">
   <div class="content">
     <div class="eyebrow" data-anim><span class="idx">09</span> Électronique</div>
-    <h2 data-anim>Architecture électrique &amp; <em>budget d'énergie</em></h2>
+    <h2 data-anim>Architecture électrique G3 &amp; <em>protections</em></h2>
     <div class="split">
       <div class="darkcard" data-anim style="height:740px;display:flex;align-items:center;justify-content:center;padding:14px">
         <img src="./assets/block-diagram.png" alt="Schéma bloc électrique" style="width:100%;height:100%;object-fit:contain;display:block">
@@ -379,10 +401,11 @@ body.export #progress,body.export #counter{display:none}
           <div class="b"><i style="background:#8B9BFF"></i><div><div class="t">SDIO 4 bits + UART HCI</div><div class="d">Wi-Fi 4 bi-bande et BT/BLE 5.2 (MAYA-W166)</div></div></div>
           <div class="b"><i style="background:#C9D1DC"></i><div><div class="t">Micro-HDMI · 1080p60</div><div class="d">Sortie vidéo native du i.MX 8M Plus</div></div></div>
         </div>
-        <div class="kpi am" data-anim><div class="kv">≤ 3,0<small>W</small></div><div class="kl">Plafond DVFS SoM sur batterie</div><div class="kd">Respecte la limite de décharge LiPo de 1,5 A.</div></div>
+        <div class="kpi am" data-anim><div class="kv">≤ 3,0<small>W</small></div><div class="kl">Plafond DVFS SoM sur batterie</div><div class="kd">Respecte la limite de décharge LiPo de 1,5 A (calcul, non mesuré).</div></div>
+        <div class="matnote" data-anim><span class="h">Protections G3 (7 familles)</span><b>TUSB320</b> · <b>TVS SMF5.0A</b> VBUS · <b>H5VL10B</b> CC1/CC2 + SW1 · <b>USBLC6</b> · <b>TPD4E05U06</b> ×3 · <b>PTC 1206L110</b> · <b>NTC</b> JEITA. Présentes au schéma, non testées.</div>
       </div>
     </div>
-    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">09 / 11</span></footer>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Gate G3 · routé, non commandé, non testé</span><span class="pg">09 / 11</span></footer>
   </div>
 </section>
 
@@ -390,26 +413,27 @@ body.export #progress,body.export #counter{display:none}
 <section class="slide s10" data-traces="tr">
   <div class="content">
     <div class="eyebrow" data-anim><span class="idx">10</span> Bilan chiffré</div>
-    <h2 data-anim>Masses &amp; <em>BOM prototype v1</em></h2>
+    <h2 data-anim>Masses &amp; <em>BOM G3 candidate</em></h2>
     <div class="grid">
       <div class="panel" data-anim>
         <h3>Répartition des masses <b>151,1 g</b></h3>
         <div class="bars" id="massBars"></div>
       </div>
       <div class="panel" data-anim>
-        <h3>Coût BOM proto v1 <b>~783 $</b></h3>
+        <h3>Coût BOM G3 <b>807,37 $</b></h3>
         <div class="donutwrap">
           <svg id="donut" viewBox="0 0 360 360" width="380" height="380"></svg>
           <div class="dl">
-            <div class="it"><i style="background:var(--cy)"></i><div><div class="v">465 $<span>59 %</span></div><div class="l">Kit d'évaluation CompuLab (SoM inclus)</div></div></div>
-            <div class="it"><i style="background:var(--am)"></i><div><div class="v">208,33 $<span>27 %</span></div><div class="l">CNC / SLA / PCB / PCBA (estimations)</div></div></div>
-            <div class="it"><i style="background:#8B95A5"></i><div><div class="v">109,71 $<span>14 %</span></div><div class="l">Composants électroniques &amp; mécaniques</div></div></div>
+            <div class="it"><i style="background:var(--cy)"></i><div><div class="v">465 $<span>57,6 %</span></div><div class="l">Kit d'évaluation CompuLab (SoM inclus)</div></div></div>
+            <div class="it"><i style="background:var(--am)"></i><div><div class="v">220,61 $<span>27,3 %</span></div><div class="l">CNC / SLA / PCB / PCBA (estimations)</div></div></div>
+            <div class="it"><i style="background:#8B95A5"></i><div><div class="v">121,76 $<span>15,1 %</span></div><div class="l">Composants électroniques &amp; mécaniques</div></div></div>
           </div>
         </div>
-        <div class="stack"><div style="width:59.38%;background:var(--cy)"></div><div style="width:26.61%;background:var(--am)"></div><div style="width:14.01%;background:#8B95A5"></div></div>
+        <div class="stack"><div style="width:57.60%;background:var(--cy)"></div><div style="width:27.33%;background:var(--am)"></div><div style="width:15.08%;background:#8B95A5"></div></div>
+        <p class="note10"><b>67 lignes</b> (59 actives) · <b>FROZEN-CANDIDATE</b>, pas encore commandée. La fabrication est une <b>estimation</b>, pas un devis.</p>
       </div>
     </div>
-    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">10 / 11</span></footer>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Gate G3 · routé, non commandé, non testé</span><span class="pg">10 / 11</span></footer>
   </div>
 </section>
 
@@ -417,28 +441,28 @@ body.export #progress,body.export #counter{display:none}
 <section class="slide s11" data-traces="tr">
   <div class="content">
     <div class="eyebrow" data-anim><span class="idx">11</span> Gouvernance &amp; suite</div>
-    <h2 data-anim>Gate 1 verrouillé, <em>cap sur la v1.1</em></h2>
-    <div class="pass" data-anim>● Gate 1 · PASS — Wave 1 → Wave 2 autorisée</div>
+    <h2 data-anim>Gate G3 : <em>routé, pas encore commandé</em></h2>
+    <div class="pass warn" data-anim>● G1 PASS · G2 PASS · G3 FROZEN-CANDIDATE — en attente du Go / No-Go de Mathieu</div>
     <div class="locked">
-      <div class="chip" data-anim><span class="cv">Ø70,0 mm</span><span class="cl">Enveloppe</span></div>
-      <div class="chip" data-anim><span class="cv">64,0 mm</span><span class="cl">Hauteur posée</span></div>
-      <div class="chip" data-anim><span class="cv">151,1 g</span><span class="cl">Masse totale</span></div>
-      <div class="chip" data-anim><span class="cv am">−9,00 mm</span><span class="cl">z<sub>CG</sub></span></div>
-      <div class="chip" data-anim><span class="cv cy">~783 $</span><span class="cl">BOM proto v1</span></div>
+      <div class="chip" data-anim><span class="cv">Ø70,0 mm</span><span class="cl">Enveloppe (G1)</span></div>
+      <div class="chip" data-anim><span class="cv">151,1 g</span><span class="cl">Masse (CAO)</span></div>
+      <div class="chip" data-anim><span class="cv cy">0 / 0</span><span class="cl">Non routé · erreur ERC/DRC</span></div>
+      <div class="chip" data-anim><span class="cv">1199 · 487</span><span class="cl">Pistes · vias (2 cartes)</span></div>
+      <div class="chip" data-anim><span class="cv cy">807,37 $</span><span class="cl">BOM G3 · 67 lignes</span></div>
     </div>
     <div class="axes">
-      <div class="ax panel" data-anim><span class="an">01</span><div class="own">@parts</div><h3>BOM v1.1</h3>
-        <ul><li>Activer <b>TUSB320</b> (PWR-04) et ajouter une <b>NTC 10 kΩ</b> LiPo</li><li>Ajouter insert laiton, 4× vis M2×3, PSA/OCA, mini-PCB bouton</li><li>MECH-06 : <b>1 coque supérieure</b> PA12/SLA</li></ul></div>
-      <div class="ax panel" data-anim><span class="an">02</span><div class="own">@spark + @cad</div><h3>Sync méca / KiCad</h3>
-        <ul><li>Confirmer le dégagement sous SoM (DF40C 1,5 mm, option DF40HC 3,0 mm)</li><li>PCB MPU à <b>z = −12,02 / −13,62</b> et encoche ports dans KiCad v1.1</li><li>Lever la contradiction <b>DDC 1,8 V / 3,3 V</b></li></ul></div>
-      <div class="ax panel" data-anim><span class="an">03</span><div class="own">Mathieu</div><h3>Validation thermique</h3>
-        <ul><li>Politique de suspension de charge en vidéo soutenue (<b>&gt; 2 W → LiPo ~47 °C</b>)</li><li>Température de contact de la base Alu : <b>~55 °C</b> en vidéo continue</li></ul></div>
+      <div class="ax panel" data-anim><span class="an">01</span><div class="own">Avant commande</div><h3>Revue électronique</h3>
+        <ul><li>Revue humaine des paires <b>TMDS / DSI</b> ; skew HDMI CLK <b>3,054 mm</b> (≈ 21 ps)</li><li>Impédances à valider (calculateur JLCPCB)</li><li>Sens du <b>FFC</b> et broche 1 du <b>BM28</b> ; warning sérigraphie <b>R3</b></li></ul></div>
+      <div class="ax panel" data-anim><span class="an">02</span><div class="own">Premier allumage</div><h3>Rien n’est testé</h3>
+        <ul><li>Domaine <b>GPIO4 1,8 V</b> de l’AMOLED à confirmer (CompuLab)</li><li><b>MAYA PDn</b> en open-drain ; pull-ups I2C2 à l’oscilloscope</li><li>Conso Wi-Fi (réserve 0,6 W) et autonomie : <b>à mesurer</b></li></ul></div>
+      <div class="ax panel" data-anim><span class="an">03</span><div class="own">Méca · thermique · BOM</div><h3>Écarts à fermer</h3>
+        <ul><li>CAO à aligner sur les Gerbers (Ø56,0 / Ø37,0)</li><li>BOM : MECH-02 L = 12 mm vs 6,0 mm CAO ; insert laiton, vis, PSA/OCA sans ligne</li><li>Thermique calculé (LiPo ~47 °C &gt; 2 W) : <b>non mesuré</b></li></ul></div>
     </div>
     <div class="concl" data-anim>
-      <div class="big">Prochaine étape <span class="cy">→ prototype physique</span></div>
-      <p>Enveloppe, masse, centre de gravité et coût sont figés. <span>Ces trois révisions v1.1 bouclées, la Sphère Ø70 mm passe du jumeau numérique au premier prototype.</span></p>
+      <div class="big">Prochaine étape <span class="am">→ Go / No-Go commande</span></div>
+      <p>Cartes routées, 0 connexion non routée, 0 erreur ERC/DRC, fichiers de fab générés. <span>Rien n’est fabriqué ni testé ; les vues 3D KiCad sont des PCB nus, sans modèles de composants.</span></p>
     </div>
-    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Wave 2 · Gate 2</span><span class="pg">11 / 11</span></footer>
+    <footer class="ft"><span class="brand"><i></i>Sphère Ø70 mm — Gate G3 · routé, non commandé, non testé</span><span class="pg">11 / 11</span></footer>
   </div>
 </section>
 
@@ -570,12 +594,12 @@ slides.forEach((s,i)=>{const svg=el('svg',{class:'bgtraces',viewBox:'0 0 1920 10
     d.innerHTML=`<span class="bl">${n}</span><span class="bt"><span class="bf" style="display:block;width:${Math.max(m/max*100,0.9)}%"></span></span><span class="bv">${m.toFixed(2).replace('.',',')} g</span>`;box.appendChild(d);});
   const svg=document.getElementById('donut');const r=140,c=2*Math.PI*r;let acc=0;
   svg.appendChild(el('circle',{cx:180,cy:180,r,fill:'none',stroke:'rgba(255,255,255,0.05)','stroke-width':40}));
-  [[465,'#5CE1E6'],[208.33,'#FF6B3D'],[109.71,'#8B95A5']].forEach(([v,col])=>{
-    const f=v/783.04, gap=0.006;
+  [[465,'#5CE1E6'],[220.61,'#FF6B3D'],[121.76,'#8B95A5']].forEach(([v,col])=>{
+    const f=v/807.37, gap=0.006;
     const p=el('circle',{cx:180,cy:180,r,fill:'none',stroke:col,'stroke-width':40,'stroke-dasharray':`${(f-gap)*c} ${c}`,'stroke-dashoffset':-acc*c,transform:'rotate(-90 180 180)',class:'arc'});
     svg.appendChild(p);acc+=f;});
-  const t1=el('text',{x:180,y:182,'text-anchor':'middle',fill:'#F2F4F7','font-size':58,'font-weight':600,'font-family':'Space Grotesk'});t1.textContent='~783 $';svg.appendChild(t1);
-  const t2=el('text',{x:180,y:220,'text-anchor':'middle',fill:'#9AA3B2','font-size':17,'font-family':'JetBrains Mono','letter-spacing':'2'});t2.textContent='PROTO V1 · USD';svg.appendChild(t2);
+  const t1=el('text',{x:180,y:182,'text-anchor':'middle',fill:'#F2F4F7','font-size':46,'font-weight':600,'font-family':'Space Grotesk'});t1.textContent='807,37 $';svg.appendChild(t1);
+  const t2=el('text',{x:180,y:220,'text-anchor':'middle',fill:'#9AA3B2','font-size':17,'font-family':'JetBrains Mono','letter-spacing':'2'});t2.textContent='BOM G3 · USD';svg.appendChild(t2);
 })();
 
 /* --- navigation --- */
